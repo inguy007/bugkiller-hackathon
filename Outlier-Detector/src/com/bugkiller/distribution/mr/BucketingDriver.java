@@ -1,13 +1,19 @@
 package com.bugkiller.distribution.mr;
 
+import javax.swing.plaf.multi.MultiOptionPaneUI;
+
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapred.lib.MultipleOutputFormat;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+import org.apache.hadoop.mapreduce.lib.output.MultipleOutputs;
+import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 import com.bugkiller.common.util.ConfigurationUtils;
 import com.bugkiller.distribution.NormalizedRecord;
@@ -32,6 +38,7 @@ public class BucketingDriver {
 		job.setOutputKeyClass(IntWritable.class);
 		job.setOutputValueClass(NormalizedRecord.class);
 		job.setNumReduceTasks(1);
+		
 		FileSystem fs = FileSystem.get(conf);
 		if(fs.exists(outputPath)){
 			fs.delete(outputPath, true);

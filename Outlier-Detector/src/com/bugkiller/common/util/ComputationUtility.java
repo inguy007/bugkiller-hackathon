@@ -9,8 +9,8 @@ public class ComputationUtility {
 	public static int findStringDistance(String source, String target) {
 		source = source.toLowerCase();
 		target = target.toLowerCase();
+		System.out.println("SOURCE :"+source+", TARGET :"+target);
 		if (source.length() != target.length()) {
-			// source == "indian  inst tech" target == "iit"
 			if (source.contains(" ") || source.contains("-")
 					|| source.contains("_") || source.contains(".")) {
 				String[] sourceStringList = stringSplitter(source);

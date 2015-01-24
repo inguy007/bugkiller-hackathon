@@ -10,6 +10,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
+import org.apache.hadoop.mapreduce.lib.output.MultipleOutputs;
 
 import com.bugkiller.common.util.ComputationUtility;
 import com.bugkiller.distribution.NormalizedRecord;
@@ -17,8 +18,9 @@ import com.bugkiller.distribution.NormalizedRecord;
 public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritable, NormalizedRecord> {
 
 	 private int frequencyThreshold;
-	 List<NormalizedRecord> corpus;
-	 List<NormalizedRecord> lowFreqBuckets;
+	 static List<NormalizedRecord> corpus= new ArrayList<NormalizedRecord>();
+	 static List<NormalizedRecord> lowFreqBuckets = new ArrayList<NormalizedRecord>();
+
 	 
 	@Override
 	protected void setup(Context context) throws IOException, InterruptedException {
@@ -26,8 +28,8 @@ public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritab
      	frequencyThreshold = conf.getInt("frequencyThreshold",3);
      	corpus = new ArrayList<NormalizedRecord>();
      	lowFreqBuckets = new ArrayList<NormalizedRecord>();
-     } 
-	
+     }
+		
 	@Override
 	public void reduce(NormalizedRecord key, Iterable<Text> values, Context context)
 			throws IOException, InterruptedException {
@@ -35,25 +37,23 @@ public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritab
 		for(Text value : values){
 			frequency++;
 		}
-		System.out.println("Checking record :"+key+" with frequency :"+frequency);
 		if(frequency <= frequencyThreshold){
-			System.out.println("Adding low freq record :"+key+" with frequency :"+frequency);
-			lowFreqBuckets.add(key);
+			lowFreqBuckets.add(key.createClone());
 		}else{
-			corpus.add(key);
+			corpus.add(key.createClone());
 		}
 	}
 	
 	@Override
 	public void cleanup(Context context) throws IOException, InterruptedException{
 		for(NormalizedRecord lowFreqRecord : lowFreqBuckets){
-			if(computeDistanceWithCorpus(lowFreqRecord) < 0.6){
+			if(computeDistanceWithCorpus(lowFreqRecord) < 0.8){
 				context.write(NullWritable.get(), lowFreqRecord);
 			}
 		}
 	}
 	
-	private double computeDistanceWithCorpus(NormalizedRecord lowFreqRecord) {	
+	private double computeDistanceWithCorpus(NormalizedRecord lowFreqRecord){	
 		double similarityScore = 0;
 		Map<Integer,String> lowFreqPositionValueMap = new HashMap<Integer, String>();
 		for(Object fieldObj : lowFreqRecord.getFields()){
@@ -62,7 +62,6 @@ public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritab
 				lowFreqPositionValueMap.put(Integer.parseInt(fieldValue.split("~")[0]), fieldValue.split("~")[1]);
 			}
 		}
-		System.out.println("LOW FREQ MAP :"+lowFreqPositionValueMap);
 		for(NormalizedRecord highFreqRecord : corpus){
 			Map<Integer,String> highFreqPositionValueMap = new HashMap<Integer,String>();
 			List<Object> highFreqRecordFields = highFreqRecord.getFields();
@@ -77,20 +76,35 @@ public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritab
 			for(Integer ordinalPosition : lowFreqPositionValueMap.keySet()){
 				String src = lowFreqPositionValueMap.get(ordinalPosition);
 				String target = highFreqPositionValueMap.get(ordinalPosition);
-				score += computeScore(src, target);
+				if(!src.matches("\\d+") && !target.matches("\\d+")){
+					//System.out.println("Score between :"+src+" and target :"+target+" is "+computeStringScore(src,target));
+					score += computeStringScore(src, target);	
+				}else{
+					System.out.println("Score between :"+src+" and target :"+target+" is "+computeNumericSimilarityScore(src,target));
+					score += computeNumericSimilarityScore(src,target);
+				}
 				n++;
 			}
-			System.out.println("SCORE FOR RECORD :"+lowFreqRecord+": "+score);
 			score = score/n;
-			
-			if(similarityScore == 0 || score < similarityScore){
+			if(similarityScore == 0 || score > similarityScore){
+				if(score > 0.5){
+					System.out.println("BEST MATCHES ::"+lowFreqRecord.createClone()+" and "+highFreqRecord.createClone()+" with score :"+score);	
+				}
 				similarityScore = score;
 			}
 		}
 		return similarityScore;
 	}
 	
-	private double computeScore(String first, String second) {
+	private double computeNumericSimilarityScore(String src, String target) {
+		Integer srcInt = Integer.parseInt(src);
+		Integer targetInt = Integer.parseInt(target);
+		Integer max = Math.max(srcInt,targetInt);
+		int digitsInMaxValue = max.toString().length();
+		return (1-(double)(Math.abs(srcInt-targetInt)))/(double)Math.pow(10, digitsInMaxValue);
+	}
+
+	private double computeStringScore(String first, String second) {
 		int maxLength = Math.max(first.length(), second.length());
 		// Can't divide by 0
 		if (maxLength == 0)
