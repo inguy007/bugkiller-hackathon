@@ -2,9 +2,13 @@ package com.bugkiller.inputVO;
 
 import java.util.List;
 
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class EntityTypeVO {
 
 	private String entityName;
+	private int minimimThresholdFrequency;
 	private List<EntityTypeField> entityTypeFields;
 
 	public String getEntityName() {
@@ -13,6 +17,14 @@ public class EntityTypeVO {
 
 	public void setEntityName(String entityName) {
 		this.entityName = entityName;
+	}
+
+	public int getMinimimThresholdFrequency() {
+		return minimimThresholdFrequency;
+	}
+
+	public void setMinimimThresholdFrequency(int minimimThresholdFrequency) {
+		this.minimimThresholdFrequency = minimimThresholdFrequency;
 	}
 
 	public List<EntityTypeField> getEntityTypeFields() {

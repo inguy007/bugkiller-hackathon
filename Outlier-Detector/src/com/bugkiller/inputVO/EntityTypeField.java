@@ -1,5 +1,8 @@
 package com.bugkiller.inputVO;
 
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class EntityTypeField {
 
 	private int position;
