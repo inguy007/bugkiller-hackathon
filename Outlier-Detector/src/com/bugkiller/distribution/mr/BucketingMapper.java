@@ -1,7 +1,9 @@
 package com.bugkiller.distribution.mr;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FSDataInputStream;
@@ -25,18 +27,12 @@ public class BucketingMapper extends
 	private String fieldDelimRegex;
 	private EntityTypeVO entityTypeVO;
 	private int numFields;
+	private Map<Integer, String> ordinalPositionMap = new HashMap<Integer, String>();
 
 	protected void setup(Context context) throws IOException,
 			InterruptedException {
 		Configuration conf = context.getConfiguration();
 		fieldDelimRegex = conf.get("field.record.delim", ",");
-		String metaFilePath = conf.get("metadata.file.path");
-		FileSystem dfs = FileSystem.get(conf);
-		Path src = new Path(metaFilePath);
-		FSDataInputStream fs = dfs.open(src);
-		ObjectMapper mapper = new ObjectMapper();
-		entityTypeVO = mapper.readValue(fs, EntityTypeVO.class);
-		numFields = entityTypeVO.getEntityTypeFields().size();
 	}
 
 	public void map(LongWritable key, Text value, Context context)
@@ -50,21 +46,20 @@ public class BucketingMapper extends
 		outKey.initialize();
 		List<EntityTypeField> fields = entityTypeVO.getEntityTypeFields();
 		for (EntityTypeField field : fields) {
-			String attributeValue = records[field.getPosition()-1];
+			int fieldIndex = field.getPosition()-1;
+			String attributeValue = records[fieldIndex];
 			String fieldDataType = field.getDatatype();
 			if (field.isId()) {
 				outVal.set(attributeValue);
 			} else if (field.isCategorical()) {
 				if (fieldDataType.equals(FieldDataTypes.INTEGER)) {
-					int bucketWidth = field.getBucketWidth() != 0 ? field
-							.getBucketWidth() : 100;
-					outKey.add(Integer.parseInt(attributeValue) / bucketWidth);
+					int bucketWidth = field.getBucketWidth() != 0 ? field.getBucketWidth() : 100;
+					outKey.add(fieldIndex+"~"+(Integer.parseInt(attributeValue) / bucketWidth));
 				} else if (fieldDataType.equals(FieldDataTypes.STRING)) {
-					outKey.add(attributeValue);
+					outKey.add(fieldIndex+"~"+attributeValue.toLowerCase());
 				}else if(fieldDataType.equals(FieldDataTypes.DOUBLE)) {
-					int bucketWidth = field.getBucketWidth() != 0 ? field
-							.getBucketWidth() : 100;
-					outKey.add((int)Double.parseDouble(attributeValue) / bucketWidth);
+					int bucketWidth = field.getBucketWidth() != 0 ? field.getBucketWidth() : 100;
+					outKey.add(fieldIndex+"~"+((int)Double.parseDouble(attributeValue) / bucketWidth));
 				} 
 			}
 		}

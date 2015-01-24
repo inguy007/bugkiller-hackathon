@@ -19,8 +19,8 @@ public class NormalizedRecord implements WritableComparable<NormalizedRecord>{
 			fields = new ArrayList<Object>();
 		}
 		
-		public NormalizedRecord(List<Object> fields) {
-			this.fields = fields;
+		public List<Object> getFields(){
+			return this.fields;
 		}
 		
 		public NormalizedRecord createClone() {
@@ -40,117 +40,10 @@ public class NormalizedRecord implements WritableComparable<NormalizedRecord>{
 			fields.clear();
 		}
 		
-		
-		public int getSize() {
-			return fields.size();
-		}
-		
-		public void add(Object...  fieldList) {
-			for (Object field :  fieldList) {
+		public void add(Object... fieldList) {
+			for (Object field : fieldList) {
 				fields.add(field);
 			}
-		}
-
-
-		public void prepend(Object field) {
-			fields.add(0, field);
-		}
-
-		public void append(Object field) {
-			fields.add( field);
-		}
-
-		
-		public void add(byte[] types, String[] fields) {
-			for (int i = 0; i <  fields.length; ++i) {
-				add(types[i],  fields[i]) ;
-			}
-		}
-		
-		
-		public void add(byte type, String field) {
-			Object typedField = null;
-			
-			if (type ==  INT ) {
-				typedField = Integer.parseInt(field);  
-			} else if (type ==  STRING) {
-				typedField = field;
-			
-			}  else {
-				throw new IllegalArgumentException("Failed adding element to tuple, unknown element type");
-			}
-			
-			if (null != typedField){
-				fields.add(typedField);
-			}
-		}
-
-		
-		public void set(int index, Object field) {
-			fields.add(index, field);
-		}
-		
-		
-		public Object get(int index) {
-			return fields.get(index);
-		}
-		
-		
-		public String getString(int index) {
-			return (String)fields.get(index);
-		}
-
-		
-		public String getLastAsString() {
-			return (String)fields.get(fields.size()-1);
-		}
-
-
-		public int getInt(int index) {
-			return (Integer)fields.get(index);
-		}
-
-		
-		public int getLastAsInt() {
-			return (Integer)fields.get(fields.size()-1);
-		}
-
-		
-		public long getLong(int index) {
-			return (Long)fields.get(index);
-		}
-
-		public long getLastAsLong() {
-			return (Long)fields.get(fields.size()-1);
-		}
-
-		public double getDouble(int index) {
-			return (Double)fields.get(index);
-		}
-		
-		public double getLastAsDouble() {
-			return (Double)fields.get(fields.size()-1);
-		}
-
-		
-		public boolean isInt(int index) {
-			Object obj = fields.get(index);
-			return obj instanceof Integer;
-		}
-
-		public boolean isString(int index) {
-			Object obj = fields.get(index);
-			return obj instanceof String;
-		}
-
-		/**
-		 * return true if the element is boolean
-		 * @param index
-		 * @return
-		 */
-		public boolean isDouble(int index) {
-			Object obj = fields.get(index);
-			return obj instanceof Double;
 		}
 
 		@Override
@@ -187,10 +80,12 @@ public class NormalizedRecord implements WritableComparable<NormalizedRecord>{
 			}
 		}
 
+		@Override
 		public int hashCode() {
 			return fields.hashCode();
 		}
 		
+		@Override
 		public boolean equals(Object obj ) {
 			boolean isEqual = false;
 			if (null != obj && obj instanceof NormalizedRecord){
@@ -229,31 +124,12 @@ public class NormalizedRecord implements WritableComparable<NormalizedRecord>{
 			}
 			return compared;
 		}
-		
-		public int compareToBase(NormalizedRecord other) {
-			NormalizedRecord subThis = new NormalizedRecord(fields.subList(0,fields.size()-1));
-			NormalizedRecord subThat = new NormalizedRecord(other.fields.subList(0,other.fields.size()-1));
-			return subThis.compareTo(subThat);
-		}
-		
-		/**
-		 * hash code based on all but the last element
-		 * @return
-		 */
-		public int hashCodeBase() {
-			NormalizedRecord subThis = new NormalizedRecord(fields.subList(0,fields.size()-1));
-			return subThis.hashCode();
-		}
-		
-		public boolean startsWith(Object obj) {
-			return obj.equals(fields.get(0));
-		}
-		
 
 		public void setDelim(String delim) {
 			this.delim = delim;
 		}
 
+		@Override
 		public String toString() {
 			StringBuilder stBld = new  StringBuilder();
 			for(int i = 0; i <  fields.size() ; ++i) {
@@ -264,18 +140,5 @@ public class NormalizedRecord implements WritableComparable<NormalizedRecord>{
 				}
 			}		
 			return stBld.toString();
-		}
-		
-		public String toString(int start) {
-			StringBuilder stBld = new  StringBuilder();
-			for(int i = start; i <  fields.size() ; ++i) {
-				if (i == start){
-					stBld.append(fields.get(i).toString());
-				} else {
-					stBld.append(delim).append(fields.get(i).toString());
-				}
-			}		
-			return stBld.toString();
-		}
-			
+		}	
 	}
