@@ -1,0 +1,1001 @@
+ID,Name,Stream,Percentage,College,Year,State
+1,Joshua,IT-B,70.47,collegeN,1992,Gujarat
+2,Doris,IT-I,84.61,collegeW,2011,Telangana
+3,Norma,IT-H,88.37,collegeU,2004,Haryana
+4,Chris,IT-A,84.43,collegeE,2010,Tripura
+5,Rachel,IT-C,57.76,collegeV,1999,Jammu & Kashmir
+6,Joseph,IT-G,67.49,collegeT,1991,Arunachal Pradesh
+7,David,IT-C,57.18,collegeF,2008,Andhra Pradesh
+8,Henry,IT-I,79.55,collegeZ,2013,Madhya Pradesh
+9,Steven,IT-G,91.5,collegeH,1991,Chhattisgarh
+10,Rebecca,IT-I,92.3,collegeQ,1995,Kerala
+11,Anne,IT-H,57.72,collegeH,2002,Punjab
+12,Mildred,IT-D,69.35,collegeU,2008,Assam
+13,Christopher,IT-G,73.68,collegeP,1991,Assam
+14,Bonnie,IT-H,67.25,collegeU,2011,Odisha
+15,Jack,IT-G,70.7,collegeY,1994,Odisha
+16,Helen,IT-I,77.92,collegeV,2012,Andhra Pradesh
+17,Theresa,IT-E,79.92,collegeM,1995,Goa
+18,Karen,IT-H,67.57,collegeP,2013,Sikkim
+19,Jesse,IT-I,44.31,collegeC,1994,Kerala
+20,Larry,IT-G,84.33,collegeK,2006,Maharashtra
+21,Walter,IT-I,51.67,collegeY,2006,Mizoram
+22,Nicholas,IT-F,88.3,collegeE,2001,Assam
+23,Wanda,IT-F,96.23,collegeM,2010,Haryana
+24,Victor,IT-I,62.81,collegeU,1992,Meghalaya
+25,Ronald,IT-A,85.35,collegeI,2006,Andhra Pradesh
+26,Kenneth,IT-F,97.93,collegeB,2011,Haryana
+27,Patricia,IT-E,69.46,collegeQ,2002,Tripura
+28,Donna,IT-B,70.61,collegeA,2011,Rajasthan
+29,Teresa,IT-F,79.78,collegeK,1998,West Bengal
+30,Randy,IT-G,50.83,collegeX,1995,Manipur
+31,Joan,IT-E,99.49,collegeG,2001,Manipur
+32,Lois,IT-A,87.98,collegeR,1996,Arunachal Pradesh
+33,Earl,IT-B,50.69,collegeU,1992,Chhattisgarh
+34,Pamela,IT-E,62.08,collegeR,2001,Sikkim
+35,Roy,IT-C,99.23,collegeU,1990,Sikkim
+36,Doris,IT-I,77.28,collegeT,2008,Madhya Pradesh
+37,Diane,IT-B,66.62,collegeD,1994,West Bengal
+38,Antonio,IT-H,54.31,collegeK,1998,Manipur
+39,Gregory,IT-F,98.21,collegeK,1997,Mizoram
+40,Karen,IT-I,62.79,collegeB,2005,Bihar
+41,Roger,IT-F,82.77,collegeG,2006,Jharkhand
+42,Roger,IT-F,55.1,collegeG,2005,Goa
+43,Janice,IT-G,74.73,collegeF,2013,Gujarat
+44,Dennis,IT-F,93.33,collegeB,1990,Haryana
+45,Terry,IT-B,62.06,collegeQ,2013,Sikkim
+46,Beverly,IT-D,67.32,collegeF,2013,Uttar Pradesh
+47,Andrew,IT-B,65.75,collegeI,1990,Karnataka
+48,Christina,IT-H,94.63,collegeC,2014,Himachal Pradesh
+49,Carlos,IT-I,85.05,collegeX,1992,Bihar
+50,Fred,IT-E,90.45,collegeL,1995,Manipur
+51,Catherine,IT-H,82.5,collegeT,1995,Tripura
+52,Theresa,IT-I,52.27,collegeX,2004,Assam
+53,Shawn,IT-E,53.05,collegeI,2001,Uttarakhand
+54,Amy,IT-D,60.82,collegeL,2009,Himachal Pradesh
+55,Arthur,IT-H,85.62,collegeW,1998,Mizoram
+56,James,IT-B,51.63,collegeY,1997,Assam
+57,Rose,IT-A,93.13,collegeB,1995,Tamil Nadu
+58,Lillian,IT-A,85.44,collegeF,2007,Andhra Pradesh
+59,Shirley,IT-H,59.1,collegeK,2013,Tamil Nadu
+60,Kathleen,IT-D,79.38,collegeE,1998,Sikkim
+61,Anthony,IT-C,75.9,collegeL,1995,Tamil Nadu
+62,Bobby,IT-F,86.85,collegeE,1990,Meghalaya
+63,Andrea,IT-I,57.58,collegeM,1996,Himachal Pradesh
+64,Tammy,IT-F,85.83,collegeH,2011,West Bengal
+65,Debra,IT-F,53.79,collegeT,2007,Haryana
+66,Emily,IT-G,85.15,collegeO,2006,Maharashtra
+67,Wanda,IT-I,61.36,collegeT,1999,West Bengal
+68,Elizabeth,IT-C,75.07,collegeG,2000,Mizoram
+69,Rebecca,IT-A,70.45,collegeG,2006,Assam
+70,Terry,IT-I,72.67,collegeG,2002,Mizoram
+71,Timothy,IT-C,71.66,collegeH,1998,Himachal Pradesh
+72,Peter,IT-B,93.74,collegeL,2012,Jammu & Kashmir
+73,Andrew,IT-B,50.57,collegeV,1997,Odisha
+74,Philip,IT-D,90.95,collegeM,2002,Jammu & Kashmir
+75,Amy,IT-C,62.32,collegeS,2001,Tamil Nadu
+76,Wayne,IT-G,53.92,collegeR,2004,Kerala
+77,Helen,IT-C,91.17,collegeH,1993,Kerala
+78,Joyce,IT-B,73.71,collegeD,1994,Jammu & Kashmir
+79,Kathryn,IT-E,56.2,collegeZ,1998,Arunachal Pradesh
+80,Willie,IT-C,96.37,collegeY,2000,Himachal Pradesh
+81,Bonnie,IT-H,72.92,collegeN,1998,Uttarakhand
+82,Johnny,IT-D,64.66,collegeS,2007,Telangana
+83,Gloria,IT-B,69.73,collegeE,2003,Goa
+84,Joan,IT-I,68.39,collegeX,1990,Haryana
+85,Melissa,IT-E,83.59,collegeQ,2013,Kerala
+86,Wanda,IT-E,98.64,collegeE,1990,Telangana
+87,Paul,IT-G,81.5,collegeM,1997,Kerala
+88,Julie,IT-F,58.44,collegeS,2002,Maharashtra
+89,Bruce,IT-G,93.2,collegeU,1999,Mizoram
+90,Timothy,IT-I,74.03,collegeL,1990,Arunachal Pradesh
+91,Frances,IT-E,64.23,collegeD,1990,Manipur
+92,Kathleen,IT-E,77.86,collegeV,1990,Nagaland
+93,Sean,IT-C,58.02,collegeD,2010,Bihar
+94,Roger,IT-H,58.8,collegeM,1991,Uttarakhand
+95,Linda,IT-A,68.36,collegeR,2003,Haryana
+96,Julie,IT-C,99.21,collegeX,1991,Meghalaya
+97,Thomas,IT-A,85.16,collegeA,1994,Odisha
+98,Jose,IT-B,96.84,collegeU,2003,Tripura
+99,Annie,IT-F,77.51,collegeZ,1996,Mizoram
+100,Theresa,IT-H,55.9,collegeM,2002,Madhya Pradesh
+101,Joyce,IT-B,57.04,collegeT,2002,Manipur
+102,Nicholas,IT-D,79.01,collegeO,2013,Uttar Pradesh
+103,Julia,IT-I,81.14,collegeT,2000,Goa
+104,Laura,IT-B,62.34,collegeD,2008,Telangana
+105,Marie,IT-B,95.06,collegeS,1993,Tamil Nadu
+106,Kenneth,IT-F,72.61,collegeU,2009,Himachal Pradesh
+107,Douglas,IT-C,68.84,collegeW,1996,Gujarat
+108,Rachel,IT-B,51.24,collegeG,2005,Haryana
+109,Denise,IT-A,56.1,collegeA,2004,Andhra Pradesh
+110,Tina,IT-B,71.8,collegeU,2002,Gujarat
+111,Jeffrey,IT-D,61.92,collegeM,2009,Andhra Pradesh
+112,Christina,IT-E,79.84,collegeS,2014,Rajasthan
+113,Jesse,IT-I,78.59,collegeW,2003,Punjab
+114,Gerald,IT-A,59.41,collegeB,1996,West Bengal
+115,Nicholas,IT-E,87.86,collegeV,1999,Haryana
+116,Eric,IT-G,85.04,collegeU,2000,Uttarakhand
+117,Ryan,IT-A,75.75,collegeF,2001,Jharkhand
+118,Timothy,IT-A,87.08,collegeN,1991,Madhya Pradesh
+119,Marilyn,IT-E,51.1,collegeC,1995,Bihar
+120,Joshua,IT-F,76.87,collegeX,2009,Tripura
+121,Philip,IT-I,80.75,collegeG,1990,Bihar
+122,Lori,IT-A,58.48,collegeB,2003,Maharashtra
+123,Gloria,IT-I,86.96,collegeR,1991,Karnataka
+124,Gregory,IT-D,96.49,collegeO,2000,Rajasthan
+125,Kelly,IT-G,59.58,collegeC,2009,Haryana
+126,Kathryn,IT-H,87.55,collegeD,2007,Tamil Nadu
+127,Albert,IT-I,80.49,collegeT,2004,Karnataka
+128,Nicole,IT-G,91.15,collegeQ,2004,Andhra Pradesh
+129,Joseph,IT-B,96.1,collegeI,2002,Mizoram
+130,Harold,IT-I,67.44,collegeW,1999,Jharkhand
+131,Kathryn,IT-B,79.11,collegeJ,2007,Jammu & Kashmir
+132,Matthew,IT-E,93.82,collegeE,1996,Tripura
+133,Judith,IT-E,63.55,collegeY,2005,Haryana
+134,Kimberly,IT-E,71.78,collegeO,2011,Tamil Nadu
+135,Richard,IT-B,81.59,collegeH,2004,Kerala
+136,Edward,IT-D,51.8,collegeT,1992,Gujarat
+137,Willie,IT-A,98.98,collegeO,2011,Odisha
+138,Patrick,IT-I,94.49,collegeL,1996,Maharashtra
+139,Russell,IT-I,80.73,collegeH,2004,Goa
+140,Cynthia,IT-H,98.73,collegeM,1993,Karnataka
+141,Shirley,IT-H,57.06,collegeX,2001,Sikkim
+142,Ann,IT-I,56.71,collegeQ,1994,Chhattisgarh
+143,Mark,IT-C,58.91,collegeF,2001,West Bengal
+144,Ronald,IT-D,51.63,collegeJ,2006,Maharashtra
+145,Pamela,IT-A,79.93,collegeZ,2011,Manipur
+146,Kelly,IT-D,84.92,collegeR,2000,Goa
+147,Kathleen,IT-D,67.02,collegeK,2012,Uttarakhand
+148,Evelyn,IT-E,69.49,collegeK,2014,Jammu & Kashmir
+149,Amanda,IT-I,77,collegeI,2009,Tamil Nadu
+150,Amanda,IT-D,96.81,collegeG,2002,Rajasthan
+151,Harold,IT-C,90.17,collegeT,1997,Goa
+152,Jessica,IT-E,73.93,collegeA,2014,Kerala
+153,Tina,IT-G,67.77,collegeQ,2003,Meghalaya
+154,Jane,IT-B,99.21,collegeV,2000,Gujarat
+155,Sean,IT-H,63.53,collegeV,1993,Haryana
+156,Bonnie,IT-E,56.8,collegeC,1993,Jharkhand
+157,Kathleen,IT-A,68.71,collegeF,2010,Rajasthan
+158,Amy,IT-H,57.19,collegeK,1998,West Bengal
+159,Linda,IT-A,51.49,collegeM,1996,Tamil Nadu
+160,Kelly,IT-I,67.23,collegeB,2009,Maharashtra
+161,Samuel,IT-B,66.48,collegeZ,1991,Jharkhand
+162,Arthur,IT-B,87.22,collegeT,2014,Rajasthan
+163,Scott,IT-D,55.83,collegeW,1993,Tamil Nadu
+164,George,IT-C,65.83,collegeZ,2006,Manipur
+165,Clarence,IT-I,77.02,collegeH,2001,Manipur
+166,Wayne,IT-H,54.53,collegeR,1994,Tamil Nadu
+167,Kathleen,IT-E,87.02,collegeN,2004,Odisha
+168,Antonio,IT-G,47.62,collegeC,1992,Haryana
+169,Julie,IT-B,68.15,collegeX,1992,Uttar Pradesh
+170,Paula,IT-C,71.27,collegeS,2013,Rajasthan
+171,Judy,IT-A,91.59,collegeI,2004,Jharkhand
+172,Kathryn,IT-D,72.93,collegeP,2014,Uttarakhand
+173,Peter,IT-D,76.27,collegeO,1999,Mizoram
+174,Bonnie,IT-H,67.55,collegeX,2011,Gujarat
+175,William,IT-A,82.28,collegeE,2014,Assam
+176,Diane,IT-B,70.46,collegeU,2013,Himachal Pradesh
+177,Russell,IT-G,84.54,collegeI,2011,Tamil Nadu
+178,Albert,IT-H,87.73,collegeK,1997,Meghalaya
+179,Michael,IT-C,74.52,collegeG,2001,Andhra Pradesh
+180,Jane,IT-G,94.23,collegeY,1992,Odisha
+181,Martha,IT-B,86.33,collegeB,2002,Goa
+182,Andrea,IT-I,55.18,collegeA,2004,Goa
+183,Thomas,IT-B,90.47,collegeU,1998,Maharashtra
+184,Steve,IT-E,94.95,collegeU,1991,Punjab
+185,Alan,IT-G,69.56,collegeH,2005,Gujarat
+186,Jessica,IT-C,51.81,collegeA,2002,Jammu & Kashmir
+187,Janet,IT-E,81.82,collegeZ,1998,Rajasthan
+188,Jean,IT-I,76.58,collegeJ,1992,Jammu & Kashmir
+189,Daniel,IT-G,55.13,collegeE,2004,Tamil Nadu
+190,Julia,IT-C,74.97,collegeQ,2011,Bihar
+191,Anthony,IT-I,51.13,collegeQ,1998,Bihar
+192,Daniel,IT-H,61.65,collegeB,2004,Chhattisgarh
+193,Roger,IT-B,69.1,collegeW,2003,West Bengal
+194,Phillip,IT-H,66.94,collegeS,2007,Gujarat
+195,Ruby,IT-A,54.48,collegeQ,2014,Rajasthan
+196,Julie,IT-B,84.44,collegeI,1999,Telangana
+197,Maria,IT-A,81.66,collegeP,2014,Telangana
+198,Evelyn,IT-E,75.01,collegeJ,2008,Tamil Nadu
+199,Bonnie,IT-B,96.82,collegeF,1994,Tamil Nadu
+200,Helen,IT-A,58.9,collegeF,1998,Karnataka
+201,Anna,IT-F,72.39,collegeS,2014,Sikkim
+202,Phillip,IT-F,84.12,collegeE,1992,Kerala
+203,Ronald,IT-C,68.04,collegeX,2003,Himachal Pradesh
+204,Carl,IT-B,54.96,collegeJ,1992,Jammu & Kashmir
+205,Tammy,IT-I,75.29,collegeM,2010,Uttarakhand
+206,Judith,IT-H,98.29,collegeG,1993,Rajasthan
+207,Susan,IT-I,98.01,collegeK,1993,Goa
+208,Fred,IT-C,80.31,collegeI,1999,Punjab
+209,Dennis,IT-H,82.98,collegeM,2002,Assam
+210,Marie,IT-B,69.53,collegeB,1994,Assam
+211,William,IT-F,50.81,collegeC,2001,Sikkim
+212,Phillip,IT-I,57.8,collegeM,1993,Arunachal Pradesh
+213,Jonathan,IT-G,65.22,collegeV,2003,Goa
+214,Michael,IT-F,62.98,collegeD,1999,Himachal Pradesh
+215,Rebecca,IT-C,85.44,collegeD,2005,Madhya Pradesh
+216,Christopher,IT-A,98.75,collegeP,2005,Uttar Pradesh
+217,Emily,IT-C,98.44,collegeE,2013,Arunachal Pradesh
+218,Elizabeth,IT-D,60.99,collegeW,2010,Tamil Nadu
+219,Eric,IT-G,55.01,collegeI,2013,Manipur
+220,Evelyn,IT-D,70.43,collegeU,1993,Madhya Pradesh
+221,Angela,IT-I,55.3,collegeC,2012,Bihar
+222,Scott,IT-C,77.99,collegeM,2014,Punjab
+223,Steven,IT-D,97.39,collegeP,2012,Uttarakhand
+224,Ryan,IT-B,83.65,collegeW,1998,Madhya Pradesh
+225,Gregory,IT-G,64.55,collegeL,2012,Odisha
+226,Jerry,IT-E,90.71,collegeE,1995,Odisha
+227,Gerald,IT-C,96.49,collegeM,2014,Himachal Pradesh
+228,Jeffrey,IT-C,51.91,collegeQ,1994,Assam
+229,Angela,IT-B,65.07,collegeW,2013,West Bengal
+230,Beverly,IT-F,80.01,collegeZ,2014,Meghalaya
+231,Charles,IT-E,58.31,collegeG,2001,Karnataka
+232,Ruth,IT-C,69.32,collegeM,2007,Jammu & Kashmir
+233,Donna,IT-G,81.91,collegeD,2007,UK
+234,Larry,IT-G,93.07,collegeE,1992,Chhattisgarh
+235,Ruth,IT-D,65.93,collegeF,2000,Goa
+236,Todd,IT-F,78.59,collegeO,2013,Uttar Pradesh
+237,Nicholas,IT-I,65.7,collegeV,1993,Haryana
+238,Margaret,IT-C,91.9,collegeU,2008,Madhya Pradesh
+239,Debra,IT-B,52.22,collegeJ,2004,West Bengal
+240,Clarence,IT-G,79.46,collegeZ,2004,Gujarat
+241,Ruth,IT-A,97.56,collegeI,2002,Arunachal Pradesh
+242,Robert,IT-C,68.36,collegeM,2009,Jammu & Kashmir
+243,Philip,IT-B,90.88,collegeD,2004,West Bengal
+244,Lillian,IT-G,75.48,collegeV,1996,West Bengal
+245,Emily,IT-E,80.62,collegeH,1999,Chhattisgarh
+246,Julia,IT-E,97.27,collegeR,2003,Kerala
+247,Frank,IT-A,90.31,collegeL,1993,Kerala
+248,Shawn,IT-A,68.64,collegeU,1997,Jharkhand
+249,Betty,IT-H,77.26,collegeM,2004,Uttar Pradesh
+250,Marie,IT-E,83.59,collegeI,1995,Uttarakhand
+251,Anthony,IT-C,76.55,collegeX,1992,Jharkhand
+252,Roy,IT-C,91.23,collegeA,2007,Mizoram
+253,Cheryl,IT-I,78.06,collegeS,2011,Karnataka
+254,Philip,IT-G,77.08,collegeQ,1998,Himachal Pradesh
+255,Pamela,IT-G,74.69,collegeY,1990,Arunachal Pradesh
+256,Larry,IT-B,90.34,collegeQ,1993,Himachal Pradesh
+257,Dennis,IT-D,71.92,collegeU,2007,Meghalaya
+258,Mark,IT-A,57.57,collegeL,1992,Punjab
+259,Kelly,IT-C,84.41,collegeP,2014,Odisha
+260,Nicholas,IT-A,51.23,collegeQ,1998,Assam
+261,Lawrence,IT-I,88.69,collegeV,1992,Chhattisgarh
+262,Dorothy,IT-E,79.67,collegeJ,2007,Assam
+263,Sandra,IT-E,96.32,collegeK,1998,Manipur
+264,Jeremy,IT-C,99.54,collegeV,2005,Tripura
+265,Diana,IT-A,65.76,collegeD,1991,Odisha
+266,Juan,IT-B,74.4,collegeP,1995,Gujarat
+267,Cheryl,IT-A,95.46,collegeZ,2000,Karnataka
+268,Aaron,IT-E,93.54,collegeA,2000,Gujarat
+269,Harry,IT-G,99.22,collegeQ,1995,Uttar Pradesh
+270,Bobby,IT-F,45.88,collegeC,2010,Tripura
+271,Patrick,IT-G,76.14,collegeW,1991,Bihar
+272,Mark,IT-B,91.5,collegeK,2007,West Bengal
+273,Jane,IT-I,59.67,collegeI,2003,Arunachal Pradesh
+274,Brian,IT-A,63.03,collegeD,2008,Andhra Pradesh
+275,Randy,IT-H,67.58,collegeS,2009,Rajasthan
+276,Doris,IT-I,75.46,collegeK,2001,Karnataka
+277,Jack,IT-H,66.62,collegeG,1991,Manipur
+278,Judith,IT-A,62.31,collegeV,1992,Assam
+279,Alice,IT-H,63.03,collegeW,2001,Nagaland
+280,Juan,IT-G,87.96,collegeB,1996,Punjab
+281,Ryan,IT-H,98.33,collegeP,1995,Punjab
+282,Anne,IT-E,90.49,collegeJ,2000,Goa
+283,Sara,IT-B,72.37,collegeD,1998,Rajasthan
+284,Jane,IT-C,64.5,collegeL,2002,Madhya Pradesh
+285,Debra,IT-D,91.64,collegeB,1997,Sikkim
+286,Louise,IT-I,64.54,collegeC,2007,Maharashtra
+287,Chris,IT-H,54.29,collegeX,1992,Goa
+288,Dennis,IT-G,64.44,collegeA,2009,Manipur
+289,Gregory,IT-H,55.35,collegeU,1991,Madhya Pradesh
+290,Shirley,IT-A,75.61,collegeS,1997,West Bengal
+291,Cynthia,IT-E,80.41,collegeP,1999,Tamil Nadu
+292,Lori,IT-A,88.88,collegeO,2012,Meghalaya
+293,Michelle,IT-I,58.56,collegeI,2004,Rajasthan
+294,Jessica,IT-D,75.82,collegeA,1999,Nagaland
+295,Julie,IT-A,88.72,collegeW,2013,Jharkhand
+296,Antonio,IT-G,51.11,collegeA,2005,West Bengal
+297,Carl,IT-A,69.81,collegeU,1990,Jammu & Kashmir
+298,Daniel,IT-H,58.68,collegeP,2008,Kerala
+299,Michelle,IT-F,76.24,collegeW,1994,Bihar
+300,Kathryn,IT-G,81.74,collegeY,2004,Chhattisgarh
+301,Christopher,IT-A,84.52,collegeQ,2007,Andhra Pradesh
+302,Diana,IT-H,63.98,collegeC,2003,Uttar Pradesh
+303,Amy,IT-A,77.36,collegeU,2001,Tripura
+304,Tina,IT-I,62.18,collegeN,2008,Arunachal Pradesh
+305,Nicole,IT-H,51.4,collegeE,2009,Uttar Pradesh
+306,Harold,IT-E,58.83,collegeP,1999,Andhra Pradesh
+307,Jack,IT-B,68.48,collegeY,2002,Bihar
+308,Douglas,IT-B,50.83,collegeX,1995,Karnataka
+309,Timothy,IT-B,89,collegeZ,1996,Telangana
+310,Walter,IT-C,53.74,collegeC,2005,Bihar
+311,Edward,IT-D,63.79,collegeO,1998,Himachal Pradesh
+312,Theresa,IT-I,98,collegeD,1995,Assam
+313,Jennifer,IT-A,66.62,collegeR,1994,Telangana
+314,Samuel,IT-F,66.15,collegeY,1994,Rajasthan
+315,Marie,IT-E,51.01,collegeJ,1993,Tamil Nadu
+316,Kimberly,IT-B,55.17,collegeJ,1996,Haryana
+317,Juan,IT-H,76.83,collegeI,2008,Jammu & Kashmir
+318,Harold,IT-H,67.38,collegeS,1997,Rajasthan
+319,Debra,IT-C,77.23,collegeV,2012,Arunachal Pradesh
+320,Terry,IT-C,71.55,collegeJ,2013,Himachal Pradesh
+321,Craig,IT-C,55.91,collegeZ,2000,Gujarat
+322,Benjamin,IT-I,87.27,collegeX,2008,Uttar Pradesh
+323,Randy,IT-C,91.58,collegeN,2009,Mizoram
+324,Albert,IT-A,98.88,collegeH,2012,Kerala
+325,Jerry,IT-G,65.25,collegeE,2004,Jammu & Kashmir
+326,Victor,IT-E,97.1,collegeO,1993,West Bengal
+327,Jean,IT-F,71.27,collegeL,2012,Sikkim
+328,Brian,IT-I,90.36,collegeE,2005,Arunachal Pradesh
+329,Lisa,IT-I,54.88,collegeR,2009,Karnataka
+330,Martha,IT-H,58.97,collegeT,2007,Odisha
+331,Sarah,IT-F,74.37,collegeF,2002,Haryana
+332,Andrea,IT-C,51.27,collegeX,2008,Chhattisgarh
+333,Kevin,IT-E,65.54,collegeA,2010,Tripura
+334,Donald,IT-B,79.6,collegeI,2009,Chhattisgarh
+335,Sharon,IT-D,67.27,collegeA,1990,Arunachal Pradesh
+336,Sharon,IT-A,73.6,collegeZ,2003,Haryana
+337,Rachel,IT-H,79.2,collegeD,1998,Tamil Nadu
+338,William,IT-I,96.36,collegeZ,2008,Gujarat
+339,Raymond,IT-C,74.36,collegeP,1998,Goa
+340,Michael,IT-C,50.74,collegeE,1999,Meghalaya
+341,Laura,IT-I,97.31,collegeW,2000,Mizoram
+342,Julia,IT-F,64.07,collegeC,2013,Sikkim
+343,Elizabeth,IT-E,80.43,collegeL,1994,Punjab
+344,Diana,IT-G,54.65,collegeD,2010,West Bengal
+345,Stephen,IT-I,82.57,collegeO,1998,Assam
+346,Jeffrey,IT-I,79.68,collegeH,2001,Madhya Pradesh
+347,Ruth,IT-C,57.82,collegeT,1996,Meghalaya
+348,Billy,IT-B,53.93,collegeI,2013,Meghalaya
+349,Willie,IT-F,74.82,collegeH,2008,Assam
+350,Patricia,IT-D,68.22,collegeT,2005,Goa
+351,Edward,IT-H,73.74,collegeY,1996,Chhattisgarh
+352,Doris,IT-G,53.77,collegeI,2000,Karnataka
+353,Angela,IT-F,96.9,collegeK,2011,West Bengal
+354,Michael,IT-D,70.01,collegeP,2012,Punjab
+355,Sandra,IT-A,53.41,collegeX,1998,Tamil Nadu
+356,Kathryn,IT-H,86.64,collegeR,1990,Odisha
+357,Jason,IT-B,60.02,collegeK,2009,Kerala
+358,Brenda,IT-B,74.06,collegeP,2009,West Bengal
+359,Edward,IT-I,60.33,collegeR,2008,Karnataka
+360,Benjamin,IT-E,78.37,collegeT,2000,Maharashtra
+361,Ruby,IT-H,86.08,collegeO,2003,Telangana
+362,Donald,IT-F,87.27,collegeL,2004,Manipur
+363,Craig,IT-B,57.54,collegeZ,1996,West Bengal
+364,Diana,IT-E,81.23,collegeS,2011,Karnataka
+365,Amanda,IT-A,53.97,collegeS,1994,Andhra Pradesh
+366,Amy,IT-I,57.29,collegeN,2012,Rajasthan
+367,Gloria,IT-D,94.66,collegeI,1995,Meghalaya
+368,Elizabeth,IT-A,97.5,collegeD,2011,US
+369,Tina,IT-G,94.09,collegeL,2011,Arunachal Pradesh
+370,Pamela,IT-I,99.67,collegeB,2004,Uttar Pradesh
+371,Russell,IT-H,59.76,collegeN,2000,Rajasthan
+372,Irene,IT-D,68.53,collegeG,2006,Madhya Pradesh
+373,Rose,IT-D,82.66,collegeP,2012,Uttarakhand
+374,Pamela,IT-F,81.7,collegeN,1991,Andhra Pradesh
+375,Christina,IT-G,98.69,collegeF,1993,Punjab
+376,Jane,IT-H,66.36,collegeV,1993,Kerala
+377,Phyllis,IT-A,84.86,collegeK,2005,Bihar
+378,Angela,IT-B,87.48,collegeW,2003,Haryana
+379,Theresa,IT-E,70.58,collegeZ,2003,Mizoram
+380,Lori,IT-D,63.06,collegeC,2009,Assam
+381,Sarah,IT-D,83.19,collegeJ,1991,Maharashtra
+382,Johnny,IT-B,55.8,collegeT,1993,Rajasthan
+383,Christine,IT-A,53.34,collegeJ,2006,Assam
+384,Jerry,IT-F,58.59,collegeP,2000,Haryana
+385,Kevin,IT-G,51.41,collegeA,1991,Himachal Pradesh
+386,Brandon,IT-E,75.91,collegeV,2011,Madhya Pradesh
+387,Roger,IT-I,56.53,collegeI,2007,Karnataka
+388,Nancy,IT-F,61.78,collegeE,1997,Telangana
+389,Adam,IT-A,79.84,collegeZ,1996,Uttar Pradesh
+390,Russell,IT-B,82.9,collegeA,2010,Goa
+391,Richard,IT-C,78.83,collegeM,2001,Kerala
+392,Keith,IT-A,57.79,collegeV,1996,Manipur
+393,Samuel,IT-C,99.62,collegeV,2007,Andhra Pradesh
+394,Albert,IT-H,64.98,collegeK,2010,Nagaland
+395,Scott,IT-D,62.25,collegeG,2012,Jharkhand
+396,Amy,IT-C,69.13,collegeG,1993,Gujarat
+397,Steven,IT-E,71.42,collegeO,1998,Sikkim
+398,Frank,IT-G,64.42,collegeL,2007,Uttarakhand
+399,Steve,IT-F,53.37,collegeH,1991,Assam
+400,Marie,IT-I,58.62,collegeH,2003,Uttar Pradesh
+401,Lisa,IT-G,67.28,collegeT,1999,Tripura
+402,Ryan,IT-E,63.42,collegeB,1995,Tamil Nadu
+403,Keith,IT-I,90.98,collegeB,1992,Uttar Pradesh
+404,Harold,IT-D,82.57,collegeI,1992,Tamil Nadu
+405,Mildred,IT-F,73.51,collegeX,2013,Mizoram
+406,Michael,IT-I,63.18,collegeZ,2007,Meghalaya
+407,Kathy,IT-H,64.75,collegeR,1998,Meghalaya
+408,Jesse,IT-A,62.86,collegeO,1990,Kerala
+409,Barbara,IT-H,54.79,collegeR,1991,Uttarakhand
+410,Diane,IT-G,90.68,collegeE,2008,Karnataka
+411,Annie,IT-I,55.69,collegeU,1991,Odisha
+412,Lori,IT-B,84.34,collegeU,2007,Assam
+413,Theresa,IT-D,51.3,collegeP,1991,Haryana
+414,Michael,IT-C,58.38,collegeR,2002,Himachal Pradesh
+415,Virginia,IT-A,90.21,collegeF,1996,Madhya Pradesh
+416,Irene,IT-C,94.43,collegeQ,2006,West Bengal
+417,Jason,IT-I,96.99,collegeI,2001,Madhya Pradesh
+418,Bobby,IT-C,71.03,collegeH,1995,West Bengal
+419,Lois,IT-G,86.13,collegeO,1993,Kerala
+420,Eric,IT-A,55.03,collegeK,2007,Arunachal Pradesh
+421,Kathy,IT-F,89.36,collegeY,2013,Andhra Pradesh
+422,Martin,IT-D,55.52,collegeK,2012,Arunachal Pradesh
+423,Nicholas,IT-E,64.02,collegeX,1990,Chhattisgarh
+424,Irene,IT-C,65.3,collegeQ,2013,Rajasthan
+425,Carlos,IT-I,84.44,collegeD,1991,Mizoram
+426,Sean,IT-A,62.53,collegeQ,2014,Nagaland
+427,Helen,IT-C,53.89,collegeS,2014,Madhya Pradesh
+428,Louise,IT-D,97.94,collegeK,2005,Punjab
+429,Bonnie,IT-E,57.76,collegeP,1990,Bihar
+430,Victor,IT-C,76.53,collegeP,2002,Himachal Pradesh
+431,Jimmy,IT-F,84.39,collegeD,2007,Mizoram
+432,Maria,IT-D,82.55,collegeE,1992,Tripura
+433,Jennifer,IT-I,76.49,collegeJ,2011,Tamil Nadu
+434,Maria,IT-C,95.06,collegeJ,2014,Arunachal Pradesh
+435,Billy,IT-A,82.91,collegeZ,1993,Odisha
+436,Judy,IT-A,90.85,collegeV,1995,Nagaland
+437,Maria,IT-D,74.26,collegeI,2000,Tripura
+438,Sara,IT-B,75.08,collegeQ,2005,Goa
+439,Joshua,IT-E,85.09,collegeJ,2008,Sikkim
+440,Sharon,IT-E,97.21,collegeB,1992,Tamil Nadu
+441,Ernest,IT-F,80.88,collegeE,2005,Andhra Pradesh
+442,Craig,IT-D,69.02,collegeP,2010,Gujarat
+443,Kathleen,IT-H,60.61,collegeB,2008,Assam
+444,Thomas,IT-H,66.75,collegeH,2002,Sikkim
+445,Ashley,IT-D,51.32,collegeX,1996,Bihar
+446,Peter,IT-G,64.76,collegeM,2007,Tamil Nadu
+447,Andrew,IT-A,68.53,collegeD,2005,Madhya Pradesh
+448,Arthur,IT-H,83.75,collegeG,2009,Telangana
+449,Timothy,IT-B,58.17,collegeM,1994,Himachal Pradesh
+450,Keith,IT-C,67.82,collegeP,1997,Goa
+451,Evelyn,IT-C,76.05,collegeV,2009,Rajasthan
+452,Clarence,IT-D,90.01,collegeH,1996,Tamil Nadu
+453,John,IT-C,65.78,collegeU,2008,Uttar Pradesh
+454,Harold,IT-F,68.41,collegeM,1993,Chhattisgarh
+455,Wayne,IT-H,51.09,collegeK,2013,Manipur
+456,Ralph,IT-E,62.3,collegeC,2010,Chhattisgarh
+457,James,IT-A,66.01,collegeU,2006,Gujarat
+458,Norma,IT-B,90.81,collegeG,2014,Bihar
+459,Steven,IT-C,61.51,collegeN,2007,Telangana
+460,Judith,IT-A,61.12,collegeP,2007,Punjab
+461,Joseph,IT-F,95.63,collegeY,1994,Sikkim
+462,Patrick,IT-B,97.22,collegeG,2014,West Bengal
+463,Jane,IT-D,76.14,collegeP,2007,Uttar Pradesh
+464,Christine,IT-H,50.92,collegeD,1997,Kerala
+465,Russell,IT-G,82.57,collegeK,2003,Tamil Nadu
+466,Lori,IT-I,59.54,collegeB,1996,Assam
+467,Earl,IT-D,69.44,collegeA,2000,Maharashtra
+468,Kevin,IT-G,75.64,collegeV,1992,Goa
+469,Phillip,IT-D,94.6,collegeM,2014,Telangana
+470,Catherine,IT-E,52.39,collegeF,1994,Maharashtra
+471,Louis,IT-D,95.47,collegeV,2005,Mizoram
+472,Catherine,IT-I,86.64,collegeB,1993,Nagaland
+473,Johnny,IT-C,94.45,collegeD,2007,Jharkhand
+474,Angela,IT-A,50.34,collegeH,2009,Haryana
+475,George,IT-E,66.3,collegeJ,1994,West Bengal
+476,Julie,IT-I,94.82,collegeK,2004,Sikkim
+477,Sandra,IT-A,61.74,collegeC,1997,Jammu & Kashmir
+478,Kevin,IT-B,85.85,collegeK,2000,Jharkhand
+479,Katherine,IT-A,62.64,collegeF,1990,Uttarakhand
+480,Nicholas,IT-A,56.92,collegeS,2008,Jammu & Kashmir
+481,Joshua,IT-D,68.5,collegeF,1990,Kerala
+482,Christine,IT-I,76.17,collegeE,2006,Telangana
+483,Roy,IT-C,58.26,collegeC,2002,Karnataka
+484,Mildred,IT-B,89.57,collegeO,1992,Odisha
+485,Christina,IT-I,93.64,collegeW,2006,Assam
+486,Maria,IT-C,73.75,collegeL,2001,Gujarat
+487,Mildred,IT-I,85.41,collegeQ,2013,Arunachal Pradesh
+488,Stephanie,IT-G,86.06,collegeW,1999,Odisha
+489,Mildred,IT-D,78.05,collegeJ,1993,Uttarakhand
+490,Patrick,IT-F,96.37,collegeV,1999,Nagaland
+491,Louis,IT-I,66.45,collegeU,2003,Bihar
+492,Mark,IT-I,58.69,collegeN,1994,Assam
+493,David,IT-H,61.71,collegeD,2007,Haryana
+494,Julia,IT-F,58.35,collegeP,1998,Arunachal Pradesh
+495,Louise,IT-C,76.56,collegeR,2000,Assam
+496,Jean,IT-B,71.94,collegeH,2004,Telangana
+497,Helen,IT-G,74.19,collegeL,2006,West Bengal
+498,Helen,IT-E,79.49,collegeS,2000,Sikkim
+499,Marilyn,IT-A,58.08,collegeK,1997,Kerala
+500,Edward,IT-H,92.23,collegeA,2014,Telangana
+501,Jeremy,IT-B,78.39,collegeD,2012,Telangana
+502,Janice,IT-H,95.37,collegeB,1999,Maharashtra
+503,Janet,IT-I,57.61,collegeG,2011,Maharashtra
+504,Denise,IT-D,64.1,collegeG,1992,Sikkim
+505,Richard,IT-B,57.21,collegeY,1997,Maharashtra
+506,Louise,IT-I,92.63,collegeX,2005,Haryana
+507,Judy,IT-G,88.29,collegeZ,2011,Haryana
+508,Teresa,IT-E,63.31,collegeA,1990,Jammu & Kashmir
+509,Shirley,IT-F,58.23,collegeG,1992,Manipur
+510,Amy,IT-E,63.09,collegeY,2010,Nagaland
+511,Emily,IT-A,69.22,collegeN,2013,Maharashtra
+512,Dorothy,IT-A,92.68,collegeO,1998,Mizoram
+513,Elizabeth,IT-C,88.05,collegeP,1998,Jharkhand
+514,Jennifer,IT-I,83.2,collegeD,1992,Goa
+515,Marilyn,IT-C,61.98,collegeQ,2008,Karnataka
+516,Walter,IT-A,87.54,collegeA,1990,Assam
+517,Michael,IT-E,63.97,collegeL,1992,Uttarakhand
+518,Cynthia,IT-I,64.12,collegeR,1995,Gujarat
+519,Heather,IT-C,70.56,collegeF,2011,Punjab
+520,Jean,IT-A,77.02,collegeF,2010,Odisha
+521,Ashley,IT-H,54.77,collegeY,2007,Madhya Pradesh
+522,William,IT-G,92.19,collegeL,2003,Kerala
+523,Theresa,IT-B,70.79,collegeL,2009,Telangana
+524,Terry,IT-A,90.41,collegeO,2001,Punjab
+525,Nicholas,IT-D,87.41,collegeM,2002,Assam
+526,Craig,IT-B,84.3,collegeA,1993,Uttar Pradesh
+527,Diana,IT-A,57.83,collegeW,2005,Uttarakhand
+528,Joan,IT-F,75.29,collegeR,1990,Uttar Pradesh
+529,Elizabeth,IT-E,52.4,collegeI,2010,Madhya Pradesh
+530,Scott,IT-B,52.74,collegeS,2008,Haryana
+531,Robin,IT-I,51.93,collegeU,1999,Manipur
+532,Christine,IT-H,95.22,collegeI,1995,Haryana
+533,Lori,IT-A,54.41,collegeT,2004,Nagaland
+534,Janet,IT-D,95.56,collegeM,1991,Punjab
+535,Carl,IT-D,50.42,collegeO,1994,Himachal Pradesh
+536,Ann,IT-A,91.04,collegeP,1991,Mizoram
+537,Eugene,IT-I,53.4,collegeL,2013,Manipur
+538,Jose,IT-G,66.54,collegeN,1998,Madhya Pradesh
+539,Joe,IT-B,92.64,collegeZ,2014,Maharashtra
+540,Stephanie,IT-I,56.29,collegeW,2005,Telangana
+541,Mark,IT-G,82.47,collegeH,1995,Madhya Pradesh
+542,Betty,IT-A,78.91,collegeD,1991,Assam
+543,Kathy,IT-C,77.38,collegeO,2010,Mizoram
+544,Sean,IT-E,99.79,collegeK,1995,Karnataka
+545,Shawn,IT-E,50.01,collegeB,2011,Odisha
+546,Shirley,IT-F,51.27,collegeR,2002,Himachal Pradesh
+547,Roy,IT-D,99.59,collegeV,1995,Madhya Pradesh
+548,Michelle,IT-I,98.35,collegeC,2009,Nagaland
+549,Donald,IT-E,94.98,collegeB,1992,Maharashtra
+550,Roger,IT-C,72.52,collegeN,2002,Gujarat
+551,Gregory,IT-G,71.98,collegeY,1993,Kerala
+552,Janet,IT-E,85.35,collegeU,1999,Uttarakhand
+553,Susan,IT-I,95.39,collegeQ,2004,Uttar Pradesh
+554,Roy,IT-D,69.57,collegeK,2007,Mizoram
+555,Robert,IT-B,99.1,collegeO,1997,Mizoram
+556,Donald,IT-E,63.63,collegeO,2005,Telangana
+557,Lois,IT-B,91.63,collegeA,1999,Assam
+558,Jennifer,IT-C,82.73,collegeO,1994,Rajasthan
+559,Steve,IT-B,73.48,collegeR,2010,Tamil Nadu
+560,Phyllis,IT-I,83.72,collegeO,2000,Madhya Pradesh
+561,Kathleen,IT-C,67.07,collegeI,1999,Sikkim
+562,Adam,IT-A,48.15,collegeC,1995,Uttarakhand
+563,Brenda,IT-B,74.91,collegeX,1993,Odisha
+564,Charles,IT-E,50.05,collegeU,2008,Madhya Pradesh
+565,Sara,IT-A,95.63,collegeE,2007,Uttar Pradesh
+566,Louis,IT-B,55.21,collegeL,2010,Nagaland
+567,Roger,IT-E,98.29,collegeO,2010,Karnataka
+568,Eric,IT-D,67.71,collegeC,1990,Jharkhand
+569,Stephanie,IT-I,91.72,collegeV,2011,Nagaland
+570,Frank,IT-H,52.93,collegeU,2009,Sikkim
+571,Shawn,IT-E,95.52,collegeT,1992,Assam
+572,Kelly,IT-F,86.93,collegeP,1995,Kerala
+573,Michelle,IT-A,50.38,collegeV,1998,West Bengal
+574,Thomas,IT-F,69.2,collegeO,2001,Himachal Pradesh
+575,Samuel,IT-G,87.35,collegeT,2004,Uttarakhand
+576,Carolyn,IT-A,66.83,collegeI,2000,Meghalaya
+577,Julia,IT-F,97.52,collegeH,1998,Andhra Pradesh
+578,Emily,IT-C,94.3,collegeV,2013,Uttar Pradesh
+579,Jean,IT-D,61.48,collegeK,1999,Manipur
+580,Michelle,IT-I,76.23,collegeU,2007,Gujarat
+581,Frances,IT-I,55.03,collegeC,2009,Uttar Pradesh
+582,Annie,IT-F,57.05,collegeQ,2013,Karnataka
+583,Gerald,IT-H,84.69,collegeS,2006,Madhya Pradesh
+584,Christine,IT-B,59.23,collegeY,1993,Goa
+585,Ryan,IT-H,70.05,collegeI,2000,Goa
+586,Albert,IT-D,95.81,collegeL,2002,Manipur
+587,Phillip,IT-B,69.67,collegeZ,1995,Jharkhand
+588,Sean,IT-C,79.47,collegeQ,2014,Punjab
+589,Russell,IT-F,75.45,collegeK,1994,Goa
+590,Melissa,IT-E,64.15,collegeW,2011,Chhattisgarh
+591,Ryan,IT-A,54.92,collegeV,2012,Tripura
+592,Jane,IT-E,78.28,collegeA,2013,Himachal Pradesh
+593,Jean,IT-E,87.08,collegeQ,1990,Jammu & Kashmir
+594,Kathy,IT-F,68.61,collegeW,2012,Telangana
+595,Jonathan,IT-F,67.88,collegeP,2008,Rajasthan
+596,Kenneth,IT-B,86.89,collegeO,2001,Rajasthan
+597,Dennis,IT-F,83.04,collegeQ,1993,Uttar Pradesh
+598,Rebecca,IT-G,76.46,collegeO,2012,Sikkim
+599,Anna,IT-A,76.41,collegeP,1990,Andhra Pradesh
+600,Anne,IT-B,70.14,collegeV,2014,Goa
+601,Patricia,IT-A,69.14,collegeM,1993,Mizoram
+602,Deborah,IT-D,50.08,collegeP,2013,Uttar Pradesh
+603,Donald,IT-A,87.48,collegeR,2014,Gujarat
+604,Carol,IT-D,56.04,collegeW,2012,Tamil Nadu
+605,Gerald,IT-G,73.03,collegeS,1993,Assam
+606,Craig,IT-G,71.86,collegeX,2005,Gujarat
+607,Peter,IT-A,85.68,collegeG,2001,Jharkhand
+608,Albert,IT-E,69.5,collegeS,1995,Assam
+609,Ralph,IT-D,66,collegeG,2002,Maharashtra
+610,Fred,IT-A,61.46,collegeC,2003,Karnataka
+611,Jane,IT-E,71.89,collegeP,2004,West Bengal
+612,Christina,IT-H,76.65,collegeW,1997,Uttarakhand
+613,Todd,IT-C,78.55,collegeS,1997,Rajasthan
+614,Paula,IT-G,50.36,collegeW,2003,Tripura
+615,Randy,IT-H,50.18,collegeJ,1993,Bihar
+616,Stephanie,IT-B,57.12,collegeN,2000,Telangana
+617,George,IT-D,62.88,collegeW,2002,Uttar Pradesh
+618,Jacqueline,IT-D,68.17,collegeZ,2013,Haryana
+619,Aaron,IT-I,52.11,collegeR,1992,Bihar
+620,Melissa,IT-A,65.81,collegeV,2010,Arunachal Pradesh
+621,Dorothy,IT-F,84.25,collegeO,1997,Gujarat
+622,Joyce,IT-I,55.52,collegeT,1996,Himachal Pradesh
+623,Marie,IT-C,64.73,collegeT,2005,Tamil Nadu
+624,Ruby,IT-I,89.37,collegeV,1991,Punjab
+625,Mildred,IT-F,96.49,collegeD,2009,Tripura
+626,Philip,IT-D,58.3,collegeJ,2013,Bihar
+627,Victor,IT-E,55.41,collegeO,1995,Bihar
+628,Shirley,IT-E,81.96,collegeR,2010,Assam
+629,Shirley,IT-D,51.36,collegeE,2002,Arunachal Pradesh
+630,Stephanie,IT-G,75.46,collegeM,2002,Karnataka
+631,Anna,IT-I,86.8,collegeL,1990,Gujarat
+632,Lisa,IT-D,50.12,collegeV,1995,Telangana
+633,Ruby,IT-G,58.62,collegeU,2005,Madhya Pradesh
+634,Cheryl,IT-H,62.86,collegeX,2006,Assam
+635,Kathryn,IT-C,62.98,collegeJ,1990,Assam
+636,Earl,IT-B,66.54,collegeN,1993,Bihar
+637,Denise,IT-A,67.75,collegeK,2006,Mizoram
+638,Christopher,IT-D,68.68,collegeL,2001,Assam
+639,Kenneth,IT-F,56.53,collegeS,2008,Chhattisgarh
+640,Patrick,IT-C,71.41,collegeJ,2006,Himachal Pradesh
+641,Lori,IT-I,82.47,collegeO,1996,Punjab
+642,Carlos,IT-H,99.73,collegeC,1992,Madhya Pradesh
+643,Kevin,IT-E,78.51,collegeK,1996,Chhattisgarh
+644,Nancy,IT-E,84.12,collegeO,2000,Arunachal Pradesh
+645,Teresa,IT-E,79.94,collegeF,1992,Chhattisgarh
+646,Cynthia,IT-H,50.28,collegeB,1996,Manipur
+647,Joshua,IT-E,64.19,collegeA,1998,Kerala
+648,Justin,IT-G,81.39,collegeV,2010,Gujarat
+649,Irene,IT-G,79.95,collegeF,1996,Odisha
+650,Earl,IT-B,80.99,collegeG,2012,Tamil Nadu
+651,Juan,IT-D,60.71,collegeJ,1993,Andhra Pradesh
+652,Bobby,IT-I,55.65,collegeG,2007,Goa
+653,Karen,IT-G,53.59,collegeB,2009,Odisha
+654,Frank,IT-F,51.87,collegeZ,2011,Karnataka
+655,Jose,IT-E,56.57,collegeF,2001,Uttar Pradesh
+656,Scott,IT-D,54.81,collegeH,1998,West Bengal
+657,Julia,IT-E,59.98,collegeO,2012,Assam
+658,Irene,IT-E,85.49,collegeD,2011,Haryana
+659,Aaron,IT-B,68.99,collegeU,2001,Meghalaya
+660,Albert,IT-B,96.18,collegeT,2011,Haryana
+661,James,IT-F,52.48,collegeO,2014,Mizoram
+662,Frank,IT-D,67.88,collegeN,2006,Tripura
+663,Gregory,IT-G,86.55,collegeS,2002,Jammu & Kashmir
+664,Margaret,IT-B,57.63,collegeE,1994,Tripura
+665,Patrick,IT-B,65.92,collegeL,1995,Uttarakhand
+666,Wayne,IT-H,70.22,collegeZ,1998,Tripura
+667,Frances,IT-C,83.03,collegeH,1992,Rajasthan
+668,Samuel,IT-I,52.71,collegeJ,1998,Haryana
+669,Kevin,IT-C,57.83,collegeC,1999,Jammu & Kashmir
+670,Aaron,IT-F,50.82,collegeT,1998,Odisha
+671,Daniel,IT-E,60.93,collegeW,2012,Gujarat
+672,Teresa,IT-G,55.35,collegeH,1993,Odisha
+673,Brenda,IT-D,93.93,collegeS,1991,Odisha
+674,Jeffrey,IT-F,92.52,collegeO,2002,Haryana
+675,Stephanie,IT-H,54.37,collegeX,2002,Karnataka
+676,Margaret,IT-C,72.18,collegeZ,1995,Madhya Pradesh
+677,Victor,IT-G,64.94,collegeA,2001,Nagaland
+678,Robert,IT-G,87.93,collegeU,2002,Sikkim
+679,Walter,IT-A,64.26,collegeN,1991,Meghalaya
+680,Patrick,IT-C,82.05,collegeZ,2004,Himachal Pradesh
+681,Frances,IT-I,75.79,collegeG,2007,Kerala
+682,Beverly,IT-D,90.96,collegeE,1995,Uttarakhand
+683,Jessica,IT-I,90.55,collegeK,1995,Telangana
+684,Bruce,IT-A,47.54,collegeC,2001,Bihar
+685,Cheryl,IT-F,86.28,collegeV,1995,Tripura
+686,Gloria,IT-D,67.08,collegeD,2011,Tamil Nadu
+687,Carlos,IT-A,62.75,collegeC,2009,Meghalaya
+688,Joshua,IT-E,94.67,collegeL,1999,Nagaland
+689,Emily,IT-D,73.54,collegeZ,2003,Chhattisgarh
+690,Jane,IT-I,53.12,collegeO,2006,Punjab
+691,Susan,IT-C,93.44,collegeX,1990,Tamil Nadu
+692,George,IT-D,89.02,collegeL,2004,Goa
+693,Amanda,IT-I,68.91,collegeH,1997,Nagaland
+694,Gregory,IT-C,76.5,collegeA,2013,Goa
+695,Katherine,IT-E,90.11,collegeS,1997,Meghalaya
+696,Justin,IT-A,57.19,collegeI,2005,Jammu & Kashmir
+697,Melissa,IT-I,55.2,collegeW,2007,Chhattisgarh
+698,Phillip,IT-I,87.65,collegeM,1995,Maharashtra
+699,Craig,IT-D,54.05,collegeP,1996,Uttar Pradesh
+700,Phyllis,IT-B,86.92,collegeI,1997,Andhra Pradesh
+701,Jimmy,IT-B,54.93,collegeO,2001,Meghalaya
+702,Wayne,IT-I,53.84,collegeB,2007,Manipur
+703,Theresa,IT-H,96.17,collegeF,2001,Manipur
+704,Willie,IT-E,51.34,collegeR,2003,Arunachal Pradesh
+705,Aaron,IT-G,83.29,collegeH,1997,Chhattisgarh
+706,Larry,IT-C,97.36,collegeB,2004,Himachal Pradesh
+707,Eric,IT-C,94.69,collegeJ,1997,West Bengal
+708,Ann,IT-F,81.12,collegeO,2000,Odisha
+709,Charles,IT-F,67.61,collegeY,1997,Mizoram
+710,Sharon,IT-D,78.04,collegeM,2002,Arunachal Pradesh
+711,Jeremy,IT-E,52.54,collegeF,1991,Madhya Pradesh
+712,Catherine,IT-H,62.78,collegeI,2013,Madhya Pradesh
+713,Michelle,IT-G,71.92,collegeF,2004,Odisha
+714,Dennis,IT-E,93.34,collegeP,2009,Tripura
+715,Ruth,IT-E,77.94,collegeM,1991,Kerala
+716,Anna,IT-A,94.05,collegeF,2009,Maharashtra
+717,Heather,IT-E,89.09,collegeS,2000,Mizoram
+718,Terry,IT-I,96.76,collegeY,2013,Jharkhand
+719,Louise,IT-D,70.76,collegeX,2001,Goa
+720,Brian,IT-F,87.07,collegeI,1996,Sikkim
+721,Mary,IT-G,78.47,collegeE,2010,West Bengal
+722,Frances,IT-D,63.88,collegeU,2012,Kerala
+723,George,IT-I,95.28,collegeF,2000,Telangana
+724,Harry,IT-E,87.85,collegeQ,2012,Goa
+725,Tammy,IT-C,99.31,collegeH,1999,Odisha
+726,Lisa,IT-E,59.49,collegeS,1994,Jharkhand
+727,Keith,IT-A,86.95,collegeP,1992,Goa
+728,Terry,IT-I,77.58,collegeE,1994,Manipur
+729,Carl,IT-B,49.6,collegeC,1997,Uttarakhand
+730,Carol,IT-H,67.14,collegeH,2008,Madhya Pradesh
+731,Jeremy,IT-A,65.79,collegeT,1990,Arunachal Pradesh
+732,Julia,IT-F,87.27,collegeV,2009,Karnataka
+733,Ernest,IT-I,85.61,collegeE,1996,Manipur
+734,Julie,IT-D,76.63,collegeJ,1991,West Bengal
+735,Kevin,IT-F,92.62,collegeA,2004,Meghalaya
+736,Eric,IT-C,61.05,collegeS,2011,Meghalaya
+737,Kenneth,IT-H,92.22,collegeY,2008,Chhattisgarh
+738,Earl,IT-G,59.32,collegeZ,1991,Punjab
+739,Marilyn,IT-D,62.84,collegeA,1992,Tamil Nadu
+740,Brandon,IT-D,70.1,collegeR,2011,Meghalaya
+741,Aaron,IT-B,81.12,collegeV,2012,Andhra Pradesh
+742,Timothy,IT-H,74.54,collegeW,1997,Bihar
+743,Amy,IT-F,94.34,collegeM,1999,Arunachal Pradesh
+744,Jane,IT-H,83.02,collegeQ,2012,Maharashtra
+745,Keith,IT-H,67.9,collegeN,2006,Goa
+746,Sean,IT-D,62.05,collegeE,2005,Haryana
+747,Denise,IT-H,89.44,collegeD,2004,Himachal Pradesh
+748,Harold,IT-A,82.6,collegeA,2003,Haryana
+749,Kelly,IT-E,50.48,collegeU,2009,Odisha
+750,Matthew,IT-A,75.53,collegeI,1997,Chhattisgarh
+751,Stephanie,IT-C,55.89,collegeE,1994,Maharashtra
+752,Jack,IT-G,62.48,collegeM,1996,Uttarakhand
+753,Frances,IT-E,94.14,collegeF,2009,Jharkhand
+754,Helen,IT-G,71.65,collegeD,1993,Jharkhand
+755,Gregory,IT-C,94.44,collegeL,2000,Sikkim
+756,Wayne,IT-H,94.19,collegeT,2013,Goa
+757,Donna,IT-H,95.36,collegeH,1990,Kerala
+758,Lori,IT-I,76.51,collegeZ,1999,Uttar Pradesh
+759,Judith,IT-G,50.37,collegeM,1997,Nagaland
+760,Jonathan,IT-H,97.87,collegeX,1992,Mizoram
+761,Laura,IT-D,79.28,collegeE,2009,Goa
+762,Carl,IT-F,84.15,collegeL,1998,Meghalaya
+763,Emily,IT-E,62.43,collegeW,2012,Jammu & Kashmir
+764,Amy,IT-B,69.92,collegeU,2002,Haryana
+765,Jerry,IT-G,65.26,collegeB,2001,Gujarat
+766,Rose,IT-H,52.36,collegeV,1993,Gujarat
+767,Nicholas,IT-E,83.58,collegeX,1994,Rajasthan
+768,Marie,IT-I,91.69,collegeX,2010,Uttarakhand
+769,Eugene,IT-D,57.91,collegeZ,2014,Goa
+770,Debra,IT-A,67.17,collegeN,2010,Jharkhand
+771,Wanda,IT-E,59.74,collegeH,2014,Chhattisgarh
+772,Lois,IT-A,99.27,collegeT,2002,Tripura
+773,Marilyn,IT-B,91.45,collegeD,1993,Uttarakhand
+774,Harold,IT-C,64.76,collegeV,2007,Maharashtra
+775,Jean,IT-E,62.76,collegeL,1992,Kerala
+776,Catherine,IT-C,69.53,collegeI,1997,Kerala
+777,Samuel,IT-E,77.17,collegeY,2009,Uttarakhand
+778,Martha,IT-E,71.48,collegeR,2007,Andhra Pradesh
+779,Albert,IT-E,65.57,collegeT,1993,Haryana
+780,Virginia,IT-B,57.59,collegeE,1992,Uttar Pradesh
+781,Jane,IT-H,55.71,collegeS,1998,Meghalaya
+782,Jimmy,IT-E,99.11,collegeG,2011,Telangana
+783,Rose,IT-H,90.2,collegeU,2007,Arunachal Pradesh
+784,Jerry,IT-A,82.79,collegeO,2010,Nagaland
+785,Shawn,IT-B,50.03,collegeY,2003,Tamil Nadu
+786,Kevin,IT-A,96.84,collegeT,2011,Himachal Pradesh
+787,Angela,IT-F,83.38,collegeB,2014,Jharkhand
+788,Lori,IT-G,63.75,collegeL,2013,Maharashtra
+789,Helen,IT-E,92.95,collegeN,1999,Himachal Pradesh
+790,Aaron,IT-H,54.17,collegeM,1996,Bihar
+791,Joshua,IT-B,95.67,collegeW,2011,Arunachal Pradesh
+792,Amanda,IT-G,90.46,collegeP,1996,Manipur
+793,Jessica,IT-E,52.56,collegeC,2011,Mizoram
+794,Ronald,IT-B,57.25,collegeP,1993,Jharkhand
+795,Jeremy,IT-H,61.44,collegeU,1994,Jammu & Kashmir
+796,Henry,IT-B,65.91,collegeC,2013,Odisha
+797,Jeffrey,IT-H,91.06,collegeI,2001,Karnataka
+798,Anna,IT-I,72.49,collegeI,2005,Maharashtra
+799,Matthew,IT-C,52.35,collegeZ,1999,West Bengal
+800,Donna,IT-G,76.86,collegeE,1998,Mizoram
+801,Debra,IT-G,79.48,collegeW,1994,Meghalaya
+802,Joan,IT-A,77.96,collegeU,1998,Bihar
+803,Roy,IT-F,64.07,collegeL,2014,Rajasthan
+804,Jennifer,IT-H,65.94,collegeS,2012,Manipur
+805,Linda,IT-B,83.04,collegeA,1998,West Bengal
+806,Judith,IT-A,90.42,collegeZ,1993,Karnataka
+807,Maria,IT-C,81.67,collegeP,2008,Tripura
+808,Brenda,IT-C,54.18,collegeR,2006,Himachal Pradesh
+809,Jeremy,IT-C,89.24,collegeQ,2006,Uttar Pradesh
+810,Benjamin,IT-I,96.55,collegeT,2005,Jammu & Kashmir
+811,Peter,IT-G,96.95,collegeY,1994,Maharashtra
+812,Frank,IT-E,56.24,collegeJ,1996,Madhya Pradesh
+813,Linda,IT-B,60.69,collegeG,2001,Kerala
+814,Rachel,IT-F,54.51,collegeW,1999,Manipur
+815,Wanda,IT-A,62.29,collegeK,2009,Sikkim
+816,Christina,IT-B,57.01,collegeC,1995,Tamil Nadu
+817,Juan,IT-C,57.37,collegeA,2004,Tripura
+818,Christina,IT-A,83.12,collegeY,2010,Tamil Nadu
+819,Jacqueline,IT-B,53.53,collegeX,2007,Andhra Pradesh
+820,Jeffrey,IT-G,65.08,collegeY,2006,Karnataka
+821,Cynthia,IT-A,71.48,collegeU,2008,Himachal Pradesh
+822,Michael,IT-D,50.41,collegeG,1998,Meghalaya
+823,Julie,IT-B,83.97,collegeI,1992,Punjab
+824,Sarah,IT-I,88.08,collegeW,2006,Odisha
+825,Gerald,IT-H,64.64,collegeT,2007,Manipur
+826,Norma,IT-D,68.22,collegeL,1998,Arunachal Pradesh
+827,Louise,IT-G,84.12,collegeI,1996,Karnataka
+828,Ryan,IT-I,71.35,collegeU,2013,Manipur
+829,Robert,IT-B,51.33,collegeP,1992,Odisha
+830,Howard,IT-E,77.21,collegeW,2004,Chhattisgarh
+831,Clarence,IT-B,91.85,collegeI,2005,Kerala
+832,Helen,IT-E,58.86,collegeF,2002,West Bengal
+833,Michael,IT-D,86.79,collegeP,1992,Nagaland
+834,Amanda,IT-H,79.81,collegeE,2004,Jharkhand
+835,Eugene,IT-F,62.91,collegeC,2002,Tamil Nadu
+836,Harold,IT-A,71.15,collegeD,2012,Meghalaya
+837,Kathy,IT-F,52.44,collegeM,1994,Mizoram
+838,Eric,IT-A,72.41,collegeI,1991,Odisha
+839,Nicole,IT-E,90.61,collegeU,2008,Gujarat
+840,Albert,IT-A,91.13,collegeU,2010,Himachal Pradesh
+841,Marie,IT-A,62.48,collegeI,2013,Goa
+842,Bonnie,IT-C,97.4,collegeS,1996,Uttarakhand
+843,Heather,IT-I,71.58,collegeE,1998,Manipur
+844,Brian,IT-B,79.55,collegeY,2000,Odisha
+845,Shawn,IT-D,55.06,collegeA,2005,Meghalaya
+846,Michelle,IT-E,52.79,collegeC,1995,Andhra Pradesh
+847,Aaron,IT-E,65.62,collegeE,1990,Tripura
+848,Clarence,IT-F,75.28,collegeI,2002,Nagaland
+849,Harry,IT-D,76.49,collegeI,1994,Haryana
+850,Paula,IT-F,54.05,collegeI,2014,Sikkim
+851,Evelyn,IT-D,50.53,collegeV,1996,Jammu & Kashmir
+852,Phyllis,IT-D,75.66,collegeJ,1996,West Bengal
+853,Anna,IT-F,81.74,collegeS,2014,Maharashtra
+854,George,IT-A,85.47,collegeU,2003,Tamil Nadu
+855,Carol,IT-F,92.97,collegeX,1991,Rajasthan
+856,Rose,IT-F,96.42,collegeZ,2013,Uttarakhand
+857,Daniel,IT-A,52.85,collegeU,1996,Andhra Pradesh
+858,Norma,IT-A,67.87,collegeP,1998,Haryana
+859,Joe,IT-F,56.24,collegeC,2008,Manipur
+860,Jeffrey,IT-E,58.73,collegeK,2002,Goa
+861,Beverly,IT-F,87.15,collegeM,2006,Maharashtra
+862,Janet,IT-G,56.13,collegeK,2012,Tamil Nadu
+863,Kathryn,IT-C,71.61,collegeW,2011,Maharashtra
+864,Gregory,IT-B,84.98,collegeE,1999,Chhattisgarh
+865,Anne,IT-C,92.33,collegeS,1990,Nagaland
+866,Cheryl,IT-A,61.03,collegeX,2011,Meghalaya
+867,Denise,IT-G,71.13,collegeU,2013,Uttar Pradesh
+868,Ralph,IT-C,55.25,collegeG,2012,Jammu & Kashmir
+869,Eric,IT-E,69.25,collegeR,2005,Meghalaya
+870,Evelyn,IT-B,53.39,collegeY,1993,Tripura
+871,Emily,IT-G,64.8,collegeX,2005,Kerala
+872,Katherine,IT-G,96.86,collegeO,1994,Karnataka
+873,Roger,IT-I,83.54,collegeI,1991,Punjab
+874,Judith,IT-E,98.36,collegeS,1999,Madhya Pradesh
+875,Debra,IT-D,86.29,collegeJ,1995,Punjab
+876,Jacqueline,IT-H,59.84,collegeC,2012,Odisha
+877,Steve,IT-E,60.76,collegeP,2004,Manipur
+878,Roger,IT-E,78.03,collegeW,2009,Kerala
+879,Timothy,IT-I,81.84,collegeK,2012,Odisha
+880,Jimmy,IT-F,53.63,collegeQ,1993,Gujarat
+881,Timothy,IT-C,99.25,collegeG,2007,Sikkim
+882,Betty,IT-H,99.91,collegeG,1999,Karnataka
+883,Joyce,IT-D,59.46,collegeE,2013,Maharashtra
+884,Emily,IT-I,67.55,collegeP,1996,Tamil Nadu
+885,Jeremy,IT-D,78.53,collegeN,2011,Punjab
+886,Frank,IT-A,93.78,collegeG,2013,Haryana
+887,Justin,IT-I,70.61,collegeN,2003,Karnataka
+888,Lori,IT-I,77.91,collegeJ,1991,Assam
+889,Nicole,IT-E,72.81,collegeH,2009,Himachal Pradesh
+890,Anna,IT-A,59.68,collegeZ,2010,Manipur
+891,Karen,IT-A,93.67,collegeB,2003,Gujarat
+892,Jacqueline,IT-B,58.25,collegeL,1999,Karnataka
+893,Andrew,IT-E,79.07,collegeD,2014,Meghalaya
+894,Howard,IT-D,98.72,collegeS,1990,Sikkim
+895,George,IT-D,88.28,collegeI,1991,Odisha
+896,Martin,IT-E,59.26,collegeD,2002,Nagaland
+897,Alan,IT-D,88.06,collegeV,2005,Jharkhand
+898,Kathryn,IT-I,88.29,collegeY,2005,Nagaland
+899,Donald,IT-F,70.7,collegeJ,2001,West Bengal
+900,Adam,IT-I,74.42,collegeZ,1991,Punjab
+901,Jason,IT-C,79.27,collegeR,2005,Kerala
+902,Frances,IT-C,78.89,collegeR,2007,Mizoram
+903,Matthew,IT-B,79.97,collegeB,2001,Kerala
+904,Deborah,IT-E,73.04,collegeX,2010,Meghalaya
+905,Brenda,IT-I,76.99,collegeY,2007,Manipur
+906,Annie,IT-F,60.57,collegeO,1997,Maharashtra
+907,Ronald,IT-F,83.08,collegeL,2013,Punjab
+908,Kevin,IT-C,93.41,collegeU,2013,Assam
+909,Stephen,IT-E,93.28,collegeB,1996,Uttar Pradesh
+910,Brenda,IT-F,91.36,collegeS,2004,Uttar Pradesh
+911,Christopher,IT-B,87.92,collegeO,2005,Rajasthan
+912,Louis,IT-H,46.89,collegeC,2009,Jammu & Kashmir
+913,Todd,IT-E,84.57,collegeW,1991,Punjab
+914,Katherine,IT-C,74.86,collegeF,2006,Nagaland
+915,Lawrence,IT-I,85.21,collegeJ,2006,West Bengal
+916,Billy,IT-D,63.64,collegeK,1996,West Bengal
+917,Kimberly,IT-E,67.07,collegeM,2008,Uttar Pradesh
+918,Barbara,IT-G,68.74,collegeW,2005,Himachal Pradesh
+919,Harold,IT-F,74.4,collegeW,2014,Maharashtra
+920,Patricia,IT-A,57.48,collegeT,2006,Himachal Pradesh
+921,Diane,IT-G,87.06,collegeS,1994,Maharashtra
+922,Jose,IT-E,96.95,collegeD,2006,Jammu & Kashmir
+923,Gregory,IT-D,60.75,collegeC,1998,Nagaland
+924,Beverly,IT-H,53.95,collegeG,1993,Andhra Pradesh
+925,Roy,IT-B,66.33,collegeH,1991,Tamil Nadu
+926,Ronald,IT-E,98.41,collegeM,1997,Uttar Pradesh
+927,Anthony,IT-C,56.71,collegeM,2000,Nagaland
+928,Rachel,IT-H,59.07,collegeH,2005,Odisha
+929,Chris,IT-F,80.72,collegeH,2005,Karnataka
+930,Victor,IT-B,92.1,collegeK,1998,Punjab
+931,Thomas,IT-E,58.81,collegeJ,2014,Tripura
+932,Lillian,IT-B,83.77,collegeN,2001,Chhattisgarh
+933,Deborah,IT-H,51.77,collegeS,1998,Punjab
+934,Christopher,IT-E,87.61,collegeF,2005,Himachal Pradesh
+935,Walter,IT-A,70.26,collegeP,1999,Haryana
+936,Todd,IT-I,95.66,collegeU,1995,Tamil Nadu
+937,William,IT-E,90.23,collegeR,2013,Uttarakhand
+938,Juan,IT-A,85.85,collegeH,2010,Jammu & Kashmir
+939,Benjamin,IT-G,64.46,collegeJ,1995,Mizoram
+940,Barbara,IT-B,80.12,collegeQ,1998,Manipur
+941,Richard,IT-H,93.28,collegeQ,1990,Sikkim
+942,Bobby,IT-E,93.2,collegeM,1992,Haryana
+943,Carolyn,IT-C,77.93,collegeZ,2007,Mizoram
+944,Clarence,IT-C,64.3,collegeV,1991,Uttar Pradesh
+945,Adam,IT-I,68.04,collegeT,2009,Manipur
+946,Sarah,IT-G,94.54,collegeT,1994,Meghalaya
+947,Ernest,IT-G,99.23,collegeG,1996,Tripura
+948,Heather,IT-H,93.17,collegeP,2010,Uttar Pradesh
+949,Joshua,IT-A,53.59,collegeX,1995,Jammu & Kashmir
+950,Phyllis,IT-C,69.01,collegeJ,2005,Bihar
+951,Shawn,IT-C,97.93,collegeR,2012,Tamil Nadu
+952,Evelyn,IT-G,74.01,collegeU,2000,Sikkim
+953,Keith,IT-D,50.81,collegeH,1991,Odisha
+954,Walter,IT-H,80.49,collegeS,1992,Tripura
+955,Samuel,IT-G,63.9,collegeW,1992,Uttar Pradesh
+956,Wayne,IT-B,95.37,collegeL,2007,Rajasthan
+957,Donna,IT-F,91.18,collegeG,2008,Himachal Pradesh
+958,Terry,IT-C,80.03,collegeV,1991,Arunachal Pradesh
+959,Jessica,IT-F,84.76,collegeB,1991,Karnataka
+960,Timothy,IT-G,71.15,collegeP,2006,Madhya Pradesh
+961,Susan,IT-H,95.33,collegeP,2003,Bihar
+962,Stephanie,IT-F,60.78,collegeN,2008,Haryana
+963,Terry,IT-C,56.94,collegeV,2010,Gujarat
+964,Thomas,IT-E,88.14,collegeA,1995,Himachal Pradesh
+965,Diana,IT-E,68.46,collegeS,2003,Telangana
+966,Sarah,IT-E,67.77,collegeL,2008,Sikkim
+967,Brenda,IT-G,80.22,collegeW,1993,Jammu & Kashmir
+968,Barbara,IT-C,60.12,collegeE,2008,Andhra Pradesh
+969,Steve,IT-E,73.16,collegeE,1995,Assam
+970,Jane,IT-D,53.34,collegeY,2003,Kerala
+971,Scott,IT-H,91.95,collegeK,2012,Goa
+972,Matthew,IT-B,96.78,collegeA,2011,Meghalaya
+973,Phillip,IT-A,95.45,collegeD,2012,Madhya Pradesh
+974,Bruce,IT-C,55.87,collegeX,2008,Goa
+975,Samuel,IT-I,69.67,collegeC,1990,Maharashtra
+976,Jean,IT-B,98.77,collegeD,2010,Odisha
+977,James,IT-B,80.6,collegeJ,1996,Himachal Pradesh
+978,Harry,IT-G,57.44,collegeR,2004,Kerala
+979,Jerry,IT-H,92.22,collegeD,1997,Tamil Nadu
+980,Jeffrey,IT-G,95.88,collegeG,1990,Tripura
+981,Timothy,IT-E,67.54,collegeW,2013,Karnataka
+982,Michelle,IT-B,77.56,collegeP,2004,Kerala
+983,Jennifer,IT-A,76.84,collegeZ,2006,Tamil Nadu
+984,Peter,IT-E,64.29,collegeD,1995,Chhattisgarh
+985,Karen,IT-G,68.04,collegeQ,2007,Odisha
+986,Evelyn,IT-I,51.85,collegeO,2010,Mizoram
+987,Maria,IT-I,65.88,collegeJ,2009,Gujarat
+988,Anthony,IT-H,56.13,collegeZ,2002,Tripura
+989,Theresa,IT-F,60.44,collegeF,1991,Uttarakhand
+990,Irene,IT-E,73.4,collegeP,2008,Goa
+991,Justin,IT-B,65.69,collegeF,2008,Telangana
+992,Marie,IT-G,51.57,collegeM,2000,Meghalaya
+993,Kelly,IT-A,56.32,collegeM,2013,Mizoram
+994,Harry,IT-E,71.46,collegeS,2009,Bihar
+995,Scott,IT-B,53.91,collegeD,2005,Telangana
+996,Henry,IT-H,90.9,collegeE,2012,Madhya Pradesh
+997,Shirley,IT-B,61.02,collegeB,2000,Chhattisgarh
+998,Paula,IT-F,62.61,collegeY,1995,Manipur
+999,Kenneth,IT-C,62.81,collegeY,1990,Rajasthan
+1000,Jacqueline,IT-C,57.46,collegeY,1994,West Bengal
