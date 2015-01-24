@@ -20,7 +20,7 @@ public class BucketingDriver {
 	
 	public static void main(String[] args) throws Exception {
 		Configuration conf = ConfigurationUtils.getConfiguration();
-		conf.setInt("frequencyThreshold",5);
+		conf.setInt("frequencyThreshold",2);
 		conf.set("field.record.delim", ",");
         conf.set("metadata.file.path", metaFilePath);
 		Job job = new Job(conf, "outlier-bucketing");
