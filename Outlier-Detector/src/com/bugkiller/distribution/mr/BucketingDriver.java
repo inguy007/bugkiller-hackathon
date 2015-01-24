@@ -10,25 +10,28 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 import com.bugkiller.common.util.ConfigurationUtils;
+import com.bugkiller.distribution.NormalizedRecord;
 
 public class BucketingDriver {
 
-	static Path inputPath = new Path("/test/mapreduce/hackathon/input.csv");
+	static Path inputPath = new Path("/test/mapreduce/hackathon/input2.csv");
 	static Path outputPath = new Path("/test/mapreduce/hackathon/output");
-	static String metaFilePath = "/test/mapreduce/hackathon/meta.json";
+	static String metaFilePath = "/test/mapreduce/hackathon/meta2.json";
 	
 	public static void main(String[] args) throws Exception {
 		Configuration conf = ConfigurationUtils.getConfiguration();
 		conf.setInt("frequencyThreshold",5);
-		conf.set("field.record.delim", "|");
-        conf.set("metadata.file.path", ",");
-		Job job = new Job(conf, "Csv_Column_Counter");
+		conf.set("field.record.delim", ",");
+        conf.set("metadata.file.path", metaFilePath);
+		Job job = new Job(conf, "outlier-bucketing");
 		job.setJarByClass(BucketingDriver.class);
 		job.setMapperClass(BucketingMapper.class);
 		job.setReducerClass(BucketingReducer.class);
-		job.setOutputKeyClass(Text.class);
-		job.setOutputValueClass(IntWritable.class);
-		
+		job.setMapOutputKeyClass(NormalizedRecord.class);
+		job.setMapOutputValueClass(Text.class);
+		job.setOutputKeyClass(IntWritable.class);
+		job.setOutputValueClass(NormalizedRecord.class);
+		job.setNumReduceTasks(1);
 		FileSystem fs = FileSystem.get(conf);
 		if(fs.exists(outputPath)){
 			fs.delete(outputPath, true);

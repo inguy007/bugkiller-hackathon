@@ -29,7 +29,7 @@ public class BucketingMapper extends
 	protected void setup(Context context) throws IOException,
 			InterruptedException {
 		Configuration conf = context.getConfiguration();
-		fieldDelimRegex = conf.get("field.record.delim", "|");
+		fieldDelimRegex = conf.get("field.record.delim", ",");
 		String metaFilePath = conf.get("metadata.file.path");
 		FileSystem dfs = FileSystem.get(conf);
 		Path src = new Path(metaFilePath);
@@ -50,7 +50,7 @@ public class BucketingMapper extends
 		outKey.initialize();
 		List<EntityTypeField> fields = entityTypeVO.getEntityTypeFields();
 		for (EntityTypeField field : fields) {
-			String attributeValue = records[field.getPosition()];
+			String attributeValue = records[field.getPosition()-1];
 			String fieldDataType = field.getDatatype();
 			if (field.isId()) {
 				outVal.set(attributeValue);
@@ -61,7 +61,11 @@ public class BucketingMapper extends
 					outKey.add(Integer.parseInt(attributeValue) / bucketWidth);
 				} else if (fieldDataType.equals(FieldDataTypes.STRING)) {
 					outKey.add(attributeValue);
-				}
+				}else if(fieldDataType.equals(FieldDataTypes.DOUBLE)) {
+					int bucketWidth = field.getBucketWidth() != 0 ? field
+							.getBucketWidth() : 100;
+					outKey.add((int)Double.parseDouble(attributeValue) / bucketWidth);
+				} 
 			}
 		}
 		context.getCounter("Data", "Processed record").increment(1);

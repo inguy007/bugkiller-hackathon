@@ -30,12 +30,12 @@
             "position": 4,
             "id": false,
             "fieldName": "percentage",
-            "datatype": "int",
+            "datatype": "DOUBLE",
             "categorical": true,
             "bucketWidth": 10
         },
         {
-            "position": 3,
+            "position": 5,
             "id": false,
             "fieldName": "college",
             "datatype": "String",
@@ -43,7 +43,7 @@
             "bucketWidth": 0
         },
         {
-            "position": 5,
+            "position": 6,
             "id": false,
             "fieldName": "year",
             "datatype": "int",
@@ -51,7 +51,7 @@
             "bucketWidth": 0
         },
         {
-            "position": 3,
+            "position": 7,
             "id": false,
             "fieldName": "state",
             "datatype": "String",
