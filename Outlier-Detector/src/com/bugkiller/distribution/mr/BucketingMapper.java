@@ -33,6 +33,13 @@ public class BucketingMapper extends
 			InterruptedException {
 		Configuration conf = context.getConfiguration();
 		fieldDelimRegex = conf.get("field.record.delim", ",");
+		String metaFilePath = conf.get("metadata.file.path");
+		FileSystem dfs = FileSystem.get(conf);
+		Path src = new Path(metaFilePath);
+		FSDataInputStream fs = dfs.open(src);
+		ObjectMapper mapper = new ObjectMapper();
+		entityTypeVO = mapper.readValue(fs, EntityTypeVO.class);
+		numFields = entityTypeVO.getEntityTypeFields().size();
 	}
 
 	public void map(LongWritable key, Text value, Context context)
@@ -63,6 +70,7 @@ public class BucketingMapper extends
 				} 
 			}
 		}
+		System.out.println("OUT PUT FROM MAPPER :"+outKey);
 		context.getCounter("Data", "Processed record").increment(1);
 		context.write(outKey, outVal);
 	}

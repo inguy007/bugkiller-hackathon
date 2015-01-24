@@ -25,6 +25,7 @@ public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritab
 		Configuration conf = context.getConfiguration();
      	frequencyThreshold = conf.getInt("frequencyThreshold",3);
      	corpus = new ArrayList<NormalizedRecord>();
+     	lowFreqBuckets = new ArrayList<NormalizedRecord>();
      } 
 	
 	@Override
@@ -34,7 +35,9 @@ public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritab
 		for(Text value : values){
 			frequency++;
 		}
+		System.out.println("Checking record :"+key+" with frequency :"+frequency);
 		if(frequency <= frequencyThreshold){
+			System.out.println("Adding low freq record :"+key+" with frequency :"+frequency);
 			lowFreqBuckets.add(key);
 		}else{
 			corpus.add(key);
@@ -44,7 +47,7 @@ public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritab
 	@Override
 	public void cleanup(Context context) throws IOException, InterruptedException{
 		for(NormalizedRecord lowFreqRecord : lowFreqBuckets){
-			if(computeDistanceWithCorpus(lowFreqRecord) < 0.8){
+			if(computeDistanceWithCorpus(lowFreqRecord) < 0.6){
 				context.write(NullWritable.get(), lowFreqRecord);
 			}
 		}
@@ -58,7 +61,8 @@ public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritab
 				String fieldValue = (String) fieldObj;
 				lowFreqPositionValueMap.put(Integer.parseInt(fieldValue.split("~")[0]), fieldValue.split("~")[1]);
 			}
-		}	
+		}
+		System.out.println("LOW FREQ MAP :"+lowFreqPositionValueMap);
 		for(NormalizedRecord highFreqRecord : corpus){
 			Map<Integer,String> highFreqPositionValueMap = new HashMap<Integer,String>();
 			List<Object> highFreqRecordFields = highFreqRecord.getFields();
@@ -69,16 +73,29 @@ public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritab
 				}
 			}
 			double score = 0;
+			double n = 0;
 			for(Integer ordinalPosition : lowFreqPositionValueMap.keySet()){
 				String src = lowFreqPositionValueMap.get(ordinalPosition);
 				String target = highFreqPositionValueMap.get(ordinalPosition);
-				score += ComputationUtility.findStringDistance(src, target);
+				score += computeScore(src, target);
+				n++;
 			}
-			if(score < similarityScore){
+			System.out.println("SCORE FOR RECORD :"+lowFreqRecord+": "+score);
+			score = score/n;
+			
+			if(similarityScore == 0 || score < similarityScore){
 				similarityScore = score;
 			}
 		}
 		return similarityScore;
+	}
+	
+	private double computeScore(String first, String second) {
+		int maxLength = Math.max(first.length(), second.length());
+		// Can't divide by 0
+		if (maxLength == 0)
+			return 1.0d;
+		return ((double) (maxLength - ComputationUtility.findStringDistance(first, second)))/ (double) maxLength;
 	}
 
 }
