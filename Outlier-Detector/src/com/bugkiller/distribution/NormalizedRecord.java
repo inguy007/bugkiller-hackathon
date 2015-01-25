@@ -51,108 +51,6 @@ public class NormalizedRecord implements WritableComparable<NormalizedRecord>{
 			}
 		}
 
-
-		public void prepend(Object field) {
-			fields.add(0, field);
-		}
-
-		public void append(Object field) {
-			fields.add( field);
-		}
-
-		
-		public void add(byte[] types, String[] fields) {
-			for (int i = 0; i <  fields.length; ++i) {
-				add(types[i],  fields[i]) ;
-			}
-		}
-		
-		
-		public void add(byte type, String field) {
-			Object typedField = null;
-			
-			if (type ==  INT ) {
-				typedField = Integer.parseInt(field);  
-			} else if (type ==  STRING) {
-				typedField = field;
-			
-			}  else {
-				throw new IllegalArgumentException("Failed adding element to tuple, unknown element type");
-			}
-			
-			if (null != typedField){
-				fields.add(typedField);
-			}
-		}
-
-		
-		public void set(int index, Object field) {
-			fields.add(index, field);
-		}
-		
-		
-		public Object get(int index) {
-			return fields.get(index);
-		}
-		
-		
-		public String getString(int index) {
-			return (String)fields.get(index);
-		}
-
-		
-		public String getLastAsString() {
-			return (String)fields.get(fields.size()-1);
-		}
-
-
-		public int getInt(int index) {
-			return (Integer)fields.get(index);
-		}
-
-		
-		public int getLastAsInt() {
-			return (Integer)fields.get(fields.size()-1);
-		}
-
-		
-		public long getLong(int index) {
-			return (Long)fields.get(index);
-		}
-
-		public long getLastAsLong() {
-			return (Long)fields.get(fields.size()-1);
-		}
-
-		public double getDouble(int index) {
-			return (Double)fields.get(index);
-		}
-		
-		public double getLastAsDouble() {
-			return (Double)fields.get(fields.size()-1);
-		}
-
-		
-		public boolean isInt(int index) {
-			Object obj = fields.get(index);
-			return obj instanceof Integer;
-		}
-
-		public boolean isString(int index) {
-			Object obj = fields.get(index);
-			return obj instanceof String;
-		}
-
-		/**
-		 * return true if the element is boolean
-		 * @param index
-		 * @return
-		 */
-		public boolean isDouble(int index) {
-			Object obj = fields.get(index);
-			return obj instanceof Double;
-		}
-
 		@Override
 		public void readFields(DataInput in) throws IOException {
 			initialize();
@@ -245,11 +143,6 @@ public class NormalizedRecord implements WritableComparable<NormalizedRecord>{
 			return subThis.hashCode();
 		}
 		
-		public boolean startsWith(Object obj) {
-			return obj.equals(fields.get(0));
-		}
-		
-
 		public void setDelim(String delim) {
 			this.delim = delim;
 		}

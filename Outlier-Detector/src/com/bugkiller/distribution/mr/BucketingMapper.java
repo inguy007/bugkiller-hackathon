@@ -70,7 +70,6 @@ public class BucketingMapper extends
 				} 
 			}
 		}
-		System.out.println("OUT PUT FROM MAPPER :"+outKey);
 		context.getCounter("Data", "Processed record").increment(1);
 		context.write(outKey, outVal);
 	}
