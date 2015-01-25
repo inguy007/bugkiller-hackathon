@@ -1,0 +1,62 @@
+{
+    "entityName": "candidate",
+    "minimimThresholdFrequency":5,
+    "entityTypeFields": [
+        {
+            "position": 1,
+            "id": true,
+            "fieldName": "candidateId",
+            "datatype": "INTEGER",
+            "categorical": false,
+            "bucketWidth": 0
+        },
+        {
+            "position": 2,
+            "id": false,
+            "fieldName": "candidateName",
+            "datatype": "STRING",
+            "categorical": false,
+            "bucketWidth": 0
+        },
+        {
+            "position": 3,
+            "id": false,
+            "fieldName": "stream",
+            "datatype": "STRING",
+            "categorical": true,
+            "bucketWidth": 0
+        },
+        {
+            "position": 4,
+            "id": false,
+            "fieldName": "percentage",
+            "datatype": "DOUBLE",
+            "categorical": true,
+            "bucketWidth": 10
+        },
+        {
+            "position": 5,
+            "id": false,
+            "fieldName": "college",
+            "datatype": "STRING",
+            "categorical": true,
+            "bucketWidth": 0
+        },
+        {
+            "position": 6,
+            "id": false,
+            "fieldName": "year",
+            "datatype": "INTEGER",
+            "categorical": true,
+            "bucketWidth": 0
+        },
+        {
+            "position": 7,
+            "id": false,
+            "fieldName": "state",
+            "datatype": "STRING",
+            "categorical": true,
+            "bucketWidth": 0
+        }
+    ]
+}
