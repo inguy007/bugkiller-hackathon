@@ -45,6 +45,7 @@ public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritab
 	@Override
 	public void cleanup(Context context) throws IOException, InterruptedException{
 		for(NormalizedRecord lowFreqRecord : lowFreqBuckets){
+			//System.out.println("Lowest freq Record ::"+lowFreqRecord);
 			if(computeDistanceWithCorpus(lowFreqRecord) <= 0.8){
 				context.write(NullWritable.get(), lowFreqRecord);
 			}
@@ -70,27 +71,33 @@ public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritab
 				}
 			}
 			double score =0;
+			int n = 0;
 			for(Integer ordinalPosition : lowFreqPositionValueMap.keySet()){
 				double computedScore = 0;
 				String src = lowFreqPositionValueMap.get(ordinalPosition);
 				String target = highFreqPositionValueMap.get(ordinalPosition);
+				//System.out.println("Compariing ::"+src+" and ::"+ target);
 				if(!src.matches("\\d+") && !target.matches("\\d+")){
 					computedScore = computeStringScore(src, target);
 				}else{
 					computedScore = computeNumericSimilarityScore(src, target);
 				}
-				if(score != 0){
+				
+				//System.out.println("Old score ::"+score +" and new computed score ::"+computedScore);
+				if(n != 0){
 					if(computedScore < score){
 						score = computedScore;
 					}
 				}else{
 					score = computedScore;
 				}
+				n++;
 			}
 			if(similarityScore == 0 || score > similarityScore){
 				similarityScore = score;
 			}
 		}
+		//System.out.println("Final similarty score ::"+similarityScore);
 		return similarityScore;
 	}
 	
