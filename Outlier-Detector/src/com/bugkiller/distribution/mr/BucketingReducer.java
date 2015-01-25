@@ -47,7 +47,7 @@ public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritab
 	@Override
 	public void cleanup(Context context) throws IOException, InterruptedException{
 		for(NormalizedRecord lowFreqRecord : lowFreqBuckets){
-			if(computeDistanceWithCorpus(lowFreqRecord) < 0.8){
+			if(computeDistanceWithCorpus(lowFreqRecord) <= 0.8){
 				context.write(NullWritable.get(), lowFreqRecord);
 			}
 		}
@@ -71,13 +71,15 @@ public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritab
 					highFreqPositionValueMap.put(Integer.parseInt(fieldValue.split("~")[0]), fieldValue.split("~")[1]);
 				}
 			}
-			double score = 0;
+			//double stringSimilarityScore = 0;
+			//double numericSimilarityScore = 0;
+			double score =0;
 			double n = 0;
 			for(Integer ordinalPosition : lowFreqPositionValueMap.keySet()){
 				String src = lowFreqPositionValueMap.get(ordinalPosition);
 				String target = highFreqPositionValueMap.get(ordinalPosition);
 				if(!src.matches("\\d+") && !target.matches("\\d+")){
-					//System.out.println("Score between :"+src+" and target :"+target+" is "+computeStringScore(src,target));
+					System.out.println("Score between :"+src+" and target :"+target+" is "+computeStringScore(src,target));
 					score += computeStringScore(src, target);	
 				}else{
 					System.out.println("Score between :"+src+" and target :"+target+" is "+computeNumericSimilarityScore(src,target));
@@ -87,7 +89,7 @@ public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritab
 			}
 			score = score/n;
 			if(similarityScore == 0 || score > similarityScore){
-				if(score > 0.5){
+				if(score >= 0.8){
 					System.out.println("BEST MATCHES ::"+lowFreqRecord.createClone()+" and "+highFreqRecord.createClone()+" with score :"+score);	
 				}
 				similarityScore = score;
@@ -99,9 +101,8 @@ public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritab
 	private double computeNumericSimilarityScore(String src, String target) {
 		Integer srcInt = Integer.parseInt(src);
 		Integer targetInt = Integer.parseInt(target);
-		Integer max = Math.max(srcInt,targetInt);
-		int digitsInMaxValue = max.toString().length();
-		return (1-(double)(Math.abs(srcInt-targetInt)))/(double)Math.pow(10, digitsInMaxValue);
+		Integer min = Math.min(srcInt, targetInt);
+		return (1-(double)(Math.abs(srcInt-targetInt))/(double)min);
 	}
 
 	private double computeStringScore(String first, String second) {
