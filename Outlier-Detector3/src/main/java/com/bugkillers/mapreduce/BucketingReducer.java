@@ -13,7 +13,7 @@ import org.apache.hadoop.mapreduce.Reducer;
 
 import com.bugkillers.common.utils.ComputationUtility;
 
-public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritable, NormalizedRecord> {
+public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritable, Text> {
 
 	 private int frequencyThreshold;
 	 static List<NormalizedRecord> highFreqBuckets= new ArrayList<NormalizedRecord>();
@@ -32,10 +32,13 @@ public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritab
 	public void reduce(NormalizedRecord key, Iterable<Text> values, Context context)
 			throws IOException, InterruptedException {
 		int frequency = 0;
+		List<String> idList = new ArrayList<String>();
 		for(Text value : values){
 			frequency++;
+			idList.add(value.toString());
 		}
 		if(frequency <= frequencyThreshold){
+			key.setIds(idList);
 			lowFreqBuckets.add(key.createClone());
 		}else{
 			highFreqBuckets.add(key.createClone());
@@ -45,9 +48,11 @@ public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritab
 	@Override
 	public void cleanup(Context context) throws IOException, InterruptedException{
 		for(NormalizedRecord lowFreqRecord : lowFreqBuckets){
-			//System.out.println("Lowest freq Record ::"+lowFreqRecord);
-			if(computeDistanceWithCorpus(lowFreqRecord) <= 0.8){
-				context.write(NullWritable.get(), lowFreqRecord);
+			if(computeDistanceWithCorpus(lowFreqRecord) < 0.8){
+				List<String> ids = lowFreqRecord.getIds();	
+				for(String value : ids){
+					context.write(NullWritable.get(), new Text(value+"::"+lowFreqRecord));
+				}
 			}
 		}
 	}
@@ -76,14 +81,11 @@ public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritab
 				double computedScore = 0;
 				String src = lowFreqPositionValueMap.get(ordinalPosition);
 				String target = highFreqPositionValueMap.get(ordinalPosition);
-				//System.out.println("Compariing ::"+src+" and ::"+ target);
 				if(!src.matches("\\d+") && !target.matches("\\d+")){
 					computedScore = computeStringScore(src, target);
 				}else{
 					computedScore = computeNumericSimilarityScore(src, target);
 				}
-				
-				//System.out.println("Old score ::"+score +" and new computed score ::"+computedScore);
 				if(n != 0){
 					if(computedScore < score){
 						score = computedScore;
@@ -97,7 +99,6 @@ public class BucketingReducer extends Reducer<NormalizedRecord, Text, NullWritab
 				similarityScore = score;
 			}
 		}
-		//System.out.println("Final similarty score ::"+similarityScore);
 		return similarityScore;
 	}
 	

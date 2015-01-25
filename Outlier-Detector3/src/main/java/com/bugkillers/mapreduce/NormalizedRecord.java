@@ -17,23 +17,36 @@ public class NormalizedRecord implements WritableComparable<NormalizedRecord>{
 		private List<Object> fields;
 		private String delim = ",";
 		
+		private List<String> ids;
+		
 		public NormalizedRecord() {
 			fields = new ArrayList<Object>();
+			ids = new ArrayList<String>();
 		}
 		
 		public NormalizedRecord(List<Object> fields) {
 			this.fields = fields;
 		}
 		
+		public List<String> getIds() {
+			return ids;
+		}
+
+		public void setIds(List<String> ids) {
+			this.ids = ids;
+		}
+
 		public NormalizedRecord createClone() {
 			NormalizedRecord clone = new NormalizedRecord();
 			clone.fields.addAll(fields);
+			clone.ids.addAll(ids);
 			return clone;
 		}
 
 		public NormalizedRecord createClone(NormalizedRecord clone) {
 			clone.initialize();
 			clone.fields.addAll(fields);
+			clone.ids.addAll(ids);
 			return clone;
 		}
 		
@@ -262,7 +275,10 @@ public class NormalizedRecord implements WritableComparable<NormalizedRecord>{
 				} else {
 					stBld.append(delim).append(fields.get(i).toString());
 				}
-			}		
+			}
+			for(String str : ids){
+				stBld.append(delim).append(str);
+			}
 			return stBld.toString();
 		}
 		
